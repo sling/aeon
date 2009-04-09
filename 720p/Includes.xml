@@ -21,7 +21,7 @@
 <include file="Viewtype_Wall.xml" />
 
 <include file="Includes_sebmenu.xml" /><!-- <<<<<< Add this -->
-
+<include file="Includes_moviegenre.xml" /><!-- <<<<<< Add this -->
 
 
 <!-- Text colours ================================== -->

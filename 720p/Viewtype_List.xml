@@ -449,20 +449,18 @@
 			<effect type="fade" start="100" end="0" time="200" />
 			<effect type="slide" start="0,0" end="300,0" easing="in" tween="quadratic" time="200" acceleration="-1" />
 		</animation>
-		
 		<control type="image">
 			<include>MovieListIcon_Thumb</include>
 			<info>Container.Listitem(0).Icon</info>
 			<fadetime>400</fadetime>
+			<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 		</control>
-
+		<include>mod_moviegenre_list_8</include><!-- <<<<<< Add this -->
 		<control type="image">
 			<include>MovieListIcon_Glass</include>
 		</control>		
 	</control>
-	
 <!-- POSTER: Rolling down -->
-
 	<control type="group">
 		<posx>70</posx>
 		<posy>10</posy>
@@ -489,8 +487,9 @@
 			<animation effect="zoom" start="90" end="80" easing="out" tween="quadratic" time="200" reversible="false" center="1400,383">Hidden</animation>
 			<info>Container.Listitem(2).Icon</info>
 			<visible>Container.OnPrevious</visible>
+			<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible> <!--<<<<<< Add this -->
 		</control>
-
+		<include>mod_moviegenre_list_3</include><!-- <<<<<< Add this -->
 		<control type="image" id="4000">
 			<include>MovieListIcon_Glass</include>
 			<animation effect="zoom" start="90" end="80" easing="out" tween="quadratic" time="200" reversible="false" center="1400,383">Hidden</animation>
@@ -501,9 +500,10 @@
 			<include>MovieListIcon_Thumb</include>
 			<animation effect="zoom" start="100" end="90" easing="out" tween="quadratic" time="200" reversible="false" center="1400,383">Hidden</animation>
 			<info>Container.Listitem(1).Icon</info>
-			<visible>Container.OnPrevious</visible>			
+			<visible>Container.OnPrevious</visible>	
+			<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->		
 		</control>
-
+		<include>mod_moviegenre_list_2</include><!-- <<<<<< Add this -->
 		<control type="image" id="4000">
 			<include>MovieListIcon_Glass</include>
 			<animation effect="zoom" start="100" end="90" easing="out" tween="quadratic" time="200" reversible="false" center="1400,383">Hidden</animation>
@@ -516,8 +516,9 @@
 			<animation effect="fade" start="0" end="0" time="0">visible</animation>
 			<animation effect="fade" start="0" end="100" time="200">Hidden</animation>
 			<info>Container.Listitem(0).Icon</info>
+			<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 		</control>
-
+		<include>mod_moviegenre_list_1</include><!-- <<<<<< Add this -->
 		<control type="image" id="4000">
 			<include>MovieListIcon_Glass</include>
 			<animation effect="fade" start="0" end="0" time="0">visible</animation>
@@ -535,8 +536,9 @@
 				<effect type="fade" start="0" end="100" time="200" />
 				<effect type="zoom" start="80" end="80" time="0" center="1400,383" />
 			</animation>
+			<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible> <!--<<<<<< Add this -->
 		</control>
-
+		<include>mod_moviegenre_list_6</include><!-- <<<<<< Add this -->
 		<control type="image" id="4001">
 			<include>MovieListIcon_Glass</include>
 			<visible>Container.OnNext</visible>					
@@ -551,8 +553,9 @@
 			<visible>Container.OnNext</visible>					
 			<animation effect="zoom" start="80" end="90" easing="out" tween="quadratic" time="200" reversible="false" center="1400,383">Hidden</animation>
 			<info>Container.Listitem(1).Icon</info>
+			<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!--<<<<<< Add this -->
 		</control>
-
+		<include>mod_moviegenre_list_5</include><!-- <<<<<< Add this -->
 		<control type="image" id="4001">
 			<include>MovieListIcon_Glass</include>
 			<visible>Container.OnNext</visible>					
@@ -564,8 +567,9 @@
 			<visible>Container.OnNext</visible>					
 			<animation effect="zoom" start="90" end="100" easing="out" tween="quadratic" time="200" reversible="false" center="1400,383">Hidden</animation>
 			<info>Container.Listitem(0).Icon</info>
+			<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 		</control>
-
+		<include>mod_moviegenre_list_4</include><!-- <<<<<< Add this -->
 		<control type="image" id="4001">
 			<include>MovieListIcon_Glass</include>
 			<visible>Container.OnNext</visible>					
@@ -577,8 +581,9 @@
 			<visible>Container.OnNext</visible>					
 			<info>Container.Listitem(-1).Icon</info>
 			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 		</control>
-
+		<include>mod_moviegenre_list_7</include><!-- <<<<<< Add this -->
 		<control type="image" id="4001">
 			<include>MovieListIcon_Glass</include>
 			<visible>Container.OnNext</visible>					
@@ -588,14 +593,14 @@
 <!-- POSTER: Rolling static -->
 
 		<control type="group" id="4002">
-		<visible>![Control.IsVisible(4000) | Control.IsVisible(4001)]</visible>
-
+			<visible>![Control.IsVisible(4000) | Control.IsVisible(4001)]</visible>
 			<control type="image">
 				<include>MovieListIcon_Thumb</include>
 				<info>Container.Listitem(2).Icon</info>
 				<animation effect="zoom" start="90" end="80" time="0" center="1400,383" condition="true">Conditional</animation>
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 			</control>
-
+			<include>mod_moviegenre_list_3s</include> <!--<<<<<< Add this -->
 			<control type="image">
 				<include>MovieListIcon_Glass</include>
 				<animation effect="zoom" start="90" end="80" time="0" center="1400,383" condition="true">Conditional</animation>
@@ -605,8 +610,9 @@
 				<include>MovieListIcon_Thumb</include>
 				<info>Container.Listitem(1).Icon</info>
 				<animation effect="zoom" start="100" end="90" time="0" center="1400,383" condition="true">Conditional</animation>
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 			</control>
-
+			<include>mod_moviegenre_list_2s</include><!-- <<<<<< Add this -->
 			<control type="image">
 				<include>MovieListIcon_Glass</include>
 				<animation effect="zoom" start="100" end="90" time="0" center="1400,383" condition="true">Conditional</animation>
@@ -615,8 +621,9 @@
 			<control type="image">
 				<include>MovieListIcon_Thumb</include>
 				<info>Container.Listitem(0).Icon</info>
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 			</control>
-
+			<include>mod_moviegenre_list_1s</include><!-- <<<<<< Add this -->
 			<control type="image">
 				<include>MovieListIcon_Glass</include>
 			</control>

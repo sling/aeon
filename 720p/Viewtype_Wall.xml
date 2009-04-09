@@ -241,7 +241,7 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
-				</control>				
+				</control>
 				<control type="image">
 					<include>WallIconDimensionsSmall</include>
 					<bordertexture border="-3">wall/wall_nfborder.png</bordertexture>
@@ -304,13 +304,14 @@
 					<texture diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
+<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
-
+<include>mod_moviegenre_wall_1</include><!-- <<<<<< Add this -->
 				<control type="image">
 					<include>WallIconMovieDimensions</include>
 					<bordertexture border="-5">wall/wall_movie_nfborder.png</bordertexture>
 					<texture>wall/wall_nfoverlay.png</texture>
-				</control>				
+				</control>
 			</itemlayout>
 			<focusedlayout width="123" height="179" condition="!Skin.HasSetting(smallmoviewall)">
 				<control type="image">
@@ -319,8 +320,9 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 					<animation effect="zoom" center="62,90" start="100" end="160" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
-
+				<include>mod_moviegenre_wall_1</include><!-- <<<<<< Add this -->
 				<control type="image">
 					<include>WallIconMovieDimensions</include>
 					<bordertexture border="-3">wall/wall_movie_nfborder.png</bordertexture>
@@ -347,8 +349,9 @@
 					<texture diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
-
+				<include>mod_moviegenre_wall_2</include><!-- <<<<<< Add this -->
 				<control type="image">
 					<include>WallIconMovieDimensionsSmall</include>
 					<bordertexture border="-4">wall/wall_movie_nfborder.png</bordertexture>
@@ -362,8 +365,9 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 					<animation effect="zoom" center="44,71" start="100" end="160" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
-
+				<include>mod_moviegenre_wall_2</include><!-- <<<<<< Add this -->
 				<control type="image">
 					<include>WallIconMovieDimensionsSmall</include>
 					<bordertexture border="-5">wall/wall_movie_nfborder.png</bordertexture>

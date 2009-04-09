@@ -253,8 +253,23 @@
 			<onclick>Skin.SetBool(nopicturefanart)</onclick>
 			<onclick>Skin.SetBool(noinfofanart)</onclick>
 			<visible>![Skin.HasSetting(nomusicfanart) | Skin.HasSetting(nomoviefanart) | Skin.HasSetting(notvfanart) | Skin.HasSetting(nopicturefanart) | Skin.HasSetting(noinfofanart)]</visible>
-		</control>				
-		
+		</control>
+	<!-- ADD this >>>>> -->
+		<control type="radiobutton" id="707">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>movie genre on/off</label>
+			<onclick>Skin.ToggleSetting(moviegenre_onoff)</onclick>
+			<selected>!Skin.HasSetting(moviegenre_onoff)</selected>
+		</control>
+
+		<control type="radiobutton" id="708">
+			<visible>!Skin.HasSetting(moviegenre_onoff)</visible>
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>movie genre default image on/off</label>
+			<onclick>Skin.ToggleSetting(moviegenre_default_onoff)</onclick>
+			<selected>!Skin.HasSetting(moviegenre_default_onoff)</selected>
+		</control>			
+	<!-- <<<<< ADD this -->
 	</control>
 	
 	<control type="grouplist" id="14">
