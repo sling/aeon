@@ -775,7 +775,7 @@
 				<onclick>SetFocus(400)</onclick>
 				<onleft>400</onleft>
 				<onright>400</onright>
-				<onup>9</onup>
+				<onup>15</onup><!-- <<<<< edit 9 to 15 mod -->
 				<ondown>7</ondown>
 				<visible allowhiddenfocus="true">![Control.HasFocus(6) | ControlGroup(20).HasFocus]</visible>
 			</control>
@@ -787,7 +787,7 @@
 				<onclick>SetFocus(400)</onclick>
 				<onleft>400</onleft>
 				<onright>400</onright>
-				<onup>10</onup>
+				<onup>15</onup><!-- <<<<< edit 10 to 15 mod -->
 				<ondown>7</ondown>
 				<visible>Control.HasFocus(6) | ControlGroup(20).HasFocus</visible>
 			</control>
@@ -924,7 +924,7 @@
 				<label>31244</label>
 				<include>Objects_SettingsSectionMenuButton</include>
 				<onup>9</onup>
-				<ondown>11</ondown>
+				<ondown>15</ondown><!-- <<<<< edit 11 to 15 mod -->
 				<onleft>800</onleft>
 				<onright>800</onright>
 				<visible allowhiddenfocus="true">![Control.HasFocus(10) | ControlGroup(14).HasFocus]</visible>
@@ -935,7 +935,7 @@
 				<label>31244</label>
 				<include>Objects_SettingsSectionMenuButtonFocused</include>
 				<onup>9</onup>
-				<ondown>6</ondown>
+				<ondown>15</ondown><!-- <<<<< edit 6 to 15 mod -->
 				<onleft>40</onleft>
 				<onright>40</onright>
 				<visible>Control.HasFocus(10) | ControlGroup(14).HasFocus</visible>
@@ -956,6 +956,9 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>Control.HasFocus(10) | ControlGroup(14).HasFocus</visible>
 			</control>
+
+			<include>homesubmenu_Plugins_button</include><!-- <<<<< ADD this -->
+
 		</control>
 	</include>
 

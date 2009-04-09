@@ -20,6 +20,10 @@
 <include file="Viewtype_List.xml" />
 <include file="Viewtype_Wall.xml" />
 
+<include file="Includes_sebmenu.xml" /><!-- <<<<<< Add this -->
+
+
+
 <!-- Text colours ================================== -->
 
 <include name="listcolornofocus">
