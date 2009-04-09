@@ -91,7 +91,11 @@
 				<include>Objects_WallGridButton</include>
 				
 				<include>Objects_WallBackdropButton</include>				
-				
+				<control type="button" id="915">
+					<label>589</label>
+					<include>Objects_MediaMenuButton</include>
+					<onclick>PlayerControl(Partymode(music))</onclick>
+				</control>
 				<control type="button" id="5">
 					<label>31068</label>
 					<include>Objects_MediaMenuButton</include>
