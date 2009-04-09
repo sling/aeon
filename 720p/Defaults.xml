@@ -70,7 +70,7 @@
 		<height>35</height>
 		<textureradiofocus>check-box.png</textureradiofocus>
 		<textureradionofocus>check-boxNF.png</textureradionofocus>
-		<texturefocus>Button-Home.png</texturefocus>
+		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<label>215</label>
 		<font>font13</font>
@@ -89,13 +89,13 @@
 		<height>35</height>
 		<label>132</label>
 		<font>font13</font>
-		<texturefocus>Button-Home.png</texturefocus>
+		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<texturebg>button-focus.png</texturebg>
-		<textureleft>scroll-left.gif</textureleft>
-		<textureleftfocus>scroll-left-focus.png</textureleftfocus>
-		<textureright>scroll-right.gif</textureright>
-		<texturerightfocus>scroll-right-focus.png</texturerightfocus>
+		<textureleft>-</textureleft>
+		<textureleftfocus>-</textureleftfocus>
+		<textureright>-</textureright>
+		<texturerightfocus>-</texturerightfocus>
 		<font>font13</font>
 		<textcolor>d0ffffff</textcolor>
 		<colordiffuse>ffffffff</colordiffuse>

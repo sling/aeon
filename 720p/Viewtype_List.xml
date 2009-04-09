@@ -127,7 +127,7 @@
 				<posy>36</posy>
 				<height>2</height>
 				<width>646</width>
-				<texture>windows/list_dividerbar.png</texture>
+				<texture>windows/list_divider.png</texture>
 			</control>
 			<control type="image">
 				<posx>0</posx>
