@@ -152,7 +152,7 @@
 				<spinposx>-2</spinposx>
 				<spinwidth>40</spinwidth>
 				<spinheight>65</spinheight>
-				<include>Animations_SettingsButtonFade</include>
+				<include>Animation_SettingsButtonFade</include>
 				
 			</control>
 		</control>

@@ -1288,7 +1288,7 @@
 			<description>Videos subheadings</description>
 			<include>Settings_ButtonGroupDimensionsXBMC</include>
 			<visible>Window.IsActive(MyVideosSettings)</visible>
-			<include>Animations_SettingsButtonFade</include>
+			<include>Animation_SettingsButtonFade</include>
 			<control type="label">
 				<description>General Sub Unfocused</description>
 				<posy>32</posy>
@@ -1374,7 +1374,7 @@
 		<control type="group">
 			<include>Settings_ButtonGroupDimensionsXBMC</include>
 			<visible>Window.IsActive(MyPicturesSettings)</visible>
-			<include>Animations_SettingsButtonFade</include>
+			<include>Animation_SettingsButtonFade</include>
 			<control type="label">
 				<description>My Videos Sub Unfocused</description>
 				<posy>32</posy>
@@ -1412,7 +1412,7 @@
 		<control type="group">
 			<include>Settings_ButtonGroupDimensionsXBMC</include>
 			<visible>Window.IsActive(AppearanceSettings)</visible>
-			<include>Animations_SettingsButtonFade</include>
+			<include>Animation_SettingsButtonFade</include>
 			<control type="label">
 				<description>My Videos Sub Unfocused</description>
 				<posy>32</posy>
@@ -1498,7 +1498,7 @@
 		<control type="group">
 			<include>Settings_ButtonGroupDimensionsXBMC</include>
 			<visible>Window.IsActive(NetworkSettings)</visible>
-			<include>Animations_SettingsButtonFade</include>
+			<include>Animation_SettingsButtonFade</include>
 			<control type="label">
 				<description>My Videos Sub Unfocused</description>
 				<posy>32</posy>
@@ -1584,7 +1584,7 @@
 		<control type="group">
 			<include>Settings_ButtonGroupDimensionsXBMC</include>
 			<visible>Window.IsActive(SystemSettings)</visible>
-			<include>Animations_SettingsButtonFade</include>
+			<include>Animation_SettingsButtonFade</include>
 			<control type="label">
 				<description>My Videos Sub Unfocused</description>
 				<posy>32</posy>
@@ -1670,7 +1670,7 @@
 		<control type="group">
 			<include>Settings_ButtonGroupDimensionsXBMC</include>
 			<visible>Window.IsActive(MyMusicSettings)</visible>
-			<include>Animations_SettingsButtonFade</include>
+			<include>Animation_SettingsButtonFade</include>
 			<control type="label">
 				<description>My Videos Sub Unfocused</description>
 				<posy>32</posy>
@@ -1788,7 +1788,7 @@
 		<control type="group">
 			<include>Settings_ButtonGroupDimensionsXBMC</include>
 			<visible>Window.IsActive(MyWeatherSettings)</visible>
-			<include>Animations_SettingsButtonFade</include>
+			<include>Animation_SettingsButtonFade</include>
 			<control type="label">
 				<description>My Weather Sub</description>
 				<posy>32</posy>
@@ -1802,7 +1802,7 @@
 		<control type="group">
 			<include>Settings_ButtonGroupDimensionsXBMC</include>
 			<visible>Window.IsActive(MyProgramsSettings)</visible>
-			<include>Animations_SettingsButtonFade</include>
+			<include>Animation_SettingsButtonFade</include>
 			<control type="label">
 				<description>My Weather Sub</description>
 				<posy>32</posy>

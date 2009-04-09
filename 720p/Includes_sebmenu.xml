@@ -768,7 +768,7 @@
 	<pulseonselect>false</pulseonselect>
 	<textoffsetx>130</textoffsetx>
 	<aligny>center</aligny>
-	<include>Animations_SettingsButtonFade</include>
+	<include>Animation_SettingsButtonFade</include>
 </include>
 
 <include name="homesubmenu_Plugins_Defaultbutton1">
@@ -786,7 +786,7 @@
 	<pulseonselect>false</pulseonselect>
 	<textoffsetx>100</textoffsetx>
 	<aligny>center</aligny>
-	<include>Animations_SettingsButtonFade</include>
+	<include>Animation_SettingsButtonFade</include>
 </include>
 
 <include name="homesubmenu_Plugins_Defaultbutton2">
@@ -804,7 +804,7 @@
 	<pulseonselect>false</pulseonselect>
 	<textoffsetx>50</textoffsetx>
 	<aligny>center</aligny>
-	<include>Animations_SettingsButtonFade</include>
+	<include>Animation_SettingsButtonFade</include>
 </include>
 
 <include name="Objects_SettingsDefaultRadioButton1">

@@ -65,7 +65,7 @@
 			<textoffsetx>30</textoffsetx>
 			<aligny>top</aligny>
 			<pulseonselect>no</pulseonselect>
-			<include>Animations_SettingsButtonFade</include>
+			<include>Animation_SettingsButtonFade</include>
 			<onclick>SetFocus(800)</onclick>
 		</control>
 
@@ -93,7 +93,7 @@
 		<pulseonselect>false</pulseonselect>
 		<textoffsetx>50</textoffsetx>
 		<aligny>center</aligny>
-		<include>Animations_SettingsButtonFade</include>
+		<include>Animation_SettingsButtonFade</include>
 	</control>
 
 	<control type="radiobutton" id="8">
@@ -115,7 +115,7 @@
 		<aligny>center</aligny>
 		<textureradiofocus>settings/settings_radiobuttononfocus.png</textureradiofocus>
 		<textureradionofocus>settings/settings_radiobuttonon.png</textureradionofocus>
-		<include>Animations_SettingsButtonFade</include>
+		<include>Animation_SettingsButtonFade</include>
 	</control>
 
 	<control type="spincontrolex" id="9">
@@ -139,7 +139,7 @@
 		<spinwidth>40</spinwidth>
 		<spinheight>65</spinheight>
 		<textoffsetx>50</textoffsetx>
-		<include>Animations_SettingsButtonFade</include>
+		<include>Animation_SettingsButtonFade</include>
 		<onright>SetFocus(1)</onright>
 	</control>
 
