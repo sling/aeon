@@ -224,16 +224,18 @@
 				</control>
 			</focusedlayout>
 			<content>
-				<item id="1">
-					<visible>Container(300).HasFocus(6)|Container(300).HasFocus(7)|Container(300).HasFocus(8)</visible>
-					<description>Browse Button {tv,movies,Videos}</description>
+				<!-- TV (7) -->
+				<item id="10">
+					<visible>Container(300).HasFocus(7)</visible>
+					<visible>!Skin.HasSetting(sub_tv_file)</visible>
+					<description>TV files</description>
 					<label>$LOCALIZE[744]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
 					<onclick>XBMC.ActivateWindow(24)</onclick>
 				</item>
-				<!-- TV (7) -->
 				<item id="11">
 					<visible>Container(300).HasFocus(7)</visible>
+					<visible>!Skin.HasSetting(sub_tv_Genre)</visible>
               				<description>By Genre</description>
 					<label>$LOCALIZE[135]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -241,6 +243,7 @@
 		            	</item>
 	        	    	<item id="12">
 					<visible>Container(300).HasFocus(7)</visible>
+					<visible>!Skin.HasSetting(sub_tv_year)</visible>
 					<description>By Year</description>
 					<label>$LOCALIZE[345]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -248,6 +251,7 @@
         		    	</item>
 				<item id="13">
 					<visible>Container(300).HasFocus(7)</visible>
+					<visible>!Skin.HasSetting(sub_tv_Actor)</visible>
 					<description>By Actor</description>
 					<label>$LOCALIZE[344]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -255,13 +259,15 @@
 				</item>
 				<item id="14">
 					<visible>Container(300).HasFocus(7)</visible>
-					<description>Recently Added $LOCALIZE[20387]</description>
+					<visible>!Skin.HasSetting(sub_tv_NEWEST)</visible>
+					<description>Recently Added</description>
 					<label>NEWEST</label>
 					<onclick>Skin.Reset(submenu)</onclick>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedepisodes,return)</onclick>
 				</item>
 				<item id="15">
 					<visible>Container(300).HasFocus(7)</visible>
+					<visible>!Skin.HasSetting(sub_tv_Plugins)</visible>
 					<description>Video Plugins $LOCALIZE[1037]</description>
 					<label>Plugins</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -305,8 +311,17 @@
 				<!--TV  Plugin End -->
 				<!-- TV (7) end -->
 				<!-- Movies (6) -->
+				<item id="20">
+					<visible>Container(300).HasFocus(6)</visible>
+					<visible>!Skin.HasSetting(sub_movies_files)</visible>
+					<description>movies files</description>
+					<label>$LOCALIZE[744]</label>
+					<onclick>Skin.Reset(submenu)</onclick>
+					<onclick>XBMC.ActivateWindow(24)</onclick>
+				</item>
 				<item id="21">
 					<visible>Container(300).HasFocus(6)</visible>
+					<visible>!Skin.HasSetting(sub_movies_Genre)</visible>
 					<description>By Genre</description>
 					<label>$LOCALIZE[135]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -314,6 +329,7 @@
 				</item>
 				<item id="22">
 					<visible>Container(300).HasFocus(6)</visible>
+					<visible>!Skin.HasSetting(sub_movies_Year)</visible>
 					<description>By Year</description>
 					<label>$LOCALIZE[345]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -321,6 +337,7 @@
 				</item>
 				<item id="23">
 					<visible>Container(300).HasFocus(6)</visible>
+					<visible>!Skin.HasSetting(sub_movies_Actor)</visible>
 					<description>By Actor</description>
 					<label>$LOCALIZE[344]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -328,6 +345,7 @@
 				</item>
 				<item id="24">
 					<visible>Container(300).HasFocus(6)</visible>
+					<visible>!Skin.HasSetting(sub_movies_Director)</visible>
 					<description>By Director</description>
 					<label>$LOCALIZE[20339]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -335,6 +353,7 @@
 				</item>
 				<item id="25">
 					<visible>Container(300).HasFocus(6)</visible>
+					<visible>!Skin.HasSetting(sub_movies_Studio)</visible>
 					<description>By Studio</description>
 					<label>$LOCALIZE[20388]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -342,13 +361,15 @@
 				</item>
 				<item id="26">
 					<visible>Container(300).HasFocus(6)</visible>
-					<description>Recently Added$LOCALIZE[20386]</description>
+					<visible>!Skin.HasSetting(sub_movies_NEWEST)</visible>
+					<description>Recently Added</description>
 					<label>NEWEST</label>
 					<onclick>Skin.Reset(submenu)</onclick>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedmovies,return)</onclick>
 				</item>
 				<item id="27">
 					<visible>Container(300).HasFocus(6)</visible>
+					<visible>!Skin.HasSetting(sub_movies_Plugins)</visible>
 					<description>Video Plugins$LOCALIZE[1037]</description>
 					<label>Plugins</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -394,6 +415,7 @@
 				<!-- Music (1)  -->
 				<item id="41">
 					<visible>Container(300).HasFocus(1)</visible>
+					<visible>!Skin.HasSetting(sub_music_Party)</visible>
 					<description>Partymode</description>
 					<label>Party</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -401,6 +423,7 @@
 				</item>
 				<item id="31">
 					<visible>Container(300).HasFocus(1)</visible>
+					<visible>!Skin.HasSetting(sub_music_files)</visible>
 					<description>Browse Button</description>
 					<label>$LOCALIZE[744]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -408,6 +431,7 @@
 				</item>
 				<item id="32">
 					<visible>Container(300).HasFocus(1)</visible>
+					<visible>!Skin.HasSetting(sub_music_Playlists)</visible>
 					<description>Playlists</description>
 					<label>$LOCALIZE[136]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -415,13 +439,15 @@
 				</item>
 				<item id="33">
 					<visible>Container(300).HasFocus(1)</visible>
-					<description>Music Videos $LOCALIZE[20389]</description>
+					<visible>!Skin.HasSetting(sub_music_Videos)</visible>
+					<description>Music Videos</description>
 					<label>$LOCALIZE[157]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,musicvideos,return)</onclick>
 				</item>
 				<item id="34">
 					<visible>Container(300).HasFocus(1)</visible>
+					<visible>!Skin.HasSetting(sub_music_genres)</visible>
 					<description>genres</description>
 					<label>$LOCALIZE[135]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -429,6 +455,7 @@
 				</item>
 				<item id="35">
 					<visible>Container(300).HasFocus(1)</visible>
+					<visible>!Skin.HasSetting(sub_music_artists)</visible>
 					<description>artists</description>
 					<label>$LOCALIZE[133]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -436,6 +463,7 @@
 				</item>
 				<item id="36">
 					<visible>Container(300).HasFocus(1)</visible>
+					<visible>!Skin.HasSetting(sub_music_albums)</visible>
 					<description>albums</description>
 					<label>$LOCALIZE[132]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -443,6 +471,7 @@
 				</item>
 				<item id="37">
 					<visible>Container(300).HasFocus(1)</visible>
+					<visible>!Skin.HasSetting(sub_music_compilations)</visible>
 					<description>compilations</description>
 					<label>$LOCALIZE[521]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -450,6 +479,7 @@
 				</item>
 				<item id="38">
 					<visible>Container(300).HasFocus(1)</visible>
+					<visible>!Skin.HasSetting(sub_music_top)</visible>
 					<description>top100</description>
 					<label>$LOCALIZE[271]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -457,13 +487,15 @@
 				</item>
 				<item id="39">
 					<visible>Container(300).HasFocus(1)</visible>
-					<description>recently added albums $LOCALIZE[359]</description>
+					<visible>!Skin.HasSetting(sub_music_NEWEST)</visible>
+					<description>recently added albums</description>
 					<label>NEWEST</label>
 					<onclick>Skin.Reset(submenu)</onclick>
 					<onclick>xbmc.activatewindow(musiclibrary,recentlyaddedalbums,return)</onclick>
 				</item>
 				<item id="40">
 					<visible>Container(300).HasFocus(1)</visible>
+					<visible>!Skin.HasSetting(sub_music_Plugins)</visible>
 					<description>Music Plugins$LOCALIZE[1038]</description>
 					<label>Plugins</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -509,6 +541,7 @@
 				<!-- Programs (2) -->
 				<item id="51">
 					<visible>Container(300).HasFocus(2)</visible>
+					<visible>!Skin.HasSetting(sub_Programs_Programs)</visible>
 					<description>Programs</description>
 					<label>$LOCALIZE[0]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -516,6 +549,7 @@
 				</item>	
 				<item id="52">
 					<visible>Container(300).HasFocus(2)</visible>
+					<visible>!Skin.HasSetting(sub_Programs_scripts)</visible>
 					<description>scripts</description>
 					<label>$LOCALIZE[247]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -528,7 +562,16 @@
 					<onclick>XBMC.ActivateWindow(4)</onclick>
 					<visible>Skin.HasSetting(nosettings)</visible>
 					<visible>Container(300).HasFocus(2)</visible>
+					<visible>!Skin.HasSetting(sub_Programs_settings)</visible>
 				</item>
+				<item id="54">
+					<visible>Container(300).HasFocus(2)</visible>
+					<visible>!Skin.HasSetting(sub_Programs_favourites)</visible>
+					<description>favourites</description>
+					<label>favourites</label>
+					<onclick>xbmc.activatewindow(134)</onclick>
+				</item>
+	 
 				<!-- Programs scripts -->
 				<item id="258">
 					<visible>Container(300).HasFocus(2)</visible>
@@ -564,27 +607,37 @@
 				</item>
 				<!-- Programs Plugin End-->
 			<!-- temp fix for focus bug -->
-				<item id="54">
+				<item id="55">
 					<visible>Container(300).HasFocus(2)</visible>
+					<visible>!Skin.HasSetting(sub_Programs_Programs)</visible>
 					<description>Programs</description>
 					<label>$LOCALIZE[0]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
 					<onclick>xbmc.activatewindow(Programs)</onclick>
 				</item>	
-				<item id="55">
+				<item id="56">
 					<visible>Container(300).HasFocus(2)</visible>
+					<visible>!Skin.HasSetting(sub_Programs_scripts)</visible>
 					<description>scripts</description>
 					<label>$LOCALIZE[247]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
 					<onclick>xbmc.activatewindow(20)</onclick>
 				</item>
-				<item id="56">
+				<item id="57">
 					<visible>Container(300).HasFocus(2)</visible>
 					<label>$LOCALIZE[31016]</label>
 					<onclick>Skin.Reset(settingsfade)</onclick>
 					<onclick>Skin.Reset(submenu)</onclick>
 					<onclick>XBMC.ActivateWindow(4)</onclick>
 					<visible>Skin.HasSetting(nosettings)</visible>
+					<visible>!Skin.HasSetting(sub_Programs_settings)</visible>
+				</item>
+				<item id="58">
+					<visible>Container(300).HasFocus(2)</visible>
+					<visible>!Skin.HasSetting(sub_Programs_favourites)</visible>
+					<description>favourite</description>
+					<label>favourites</label>
+					<onclick>xbmc.activatewindow(134)</onclick>
 				</item>
 				<!-- Programs scripts -->
 				<item id="251">
@@ -627,12 +680,14 @@
 				<!-- Shutdown (22) -->
 				<item id="62">
 					<visible>Container(300).HasFocus(22)</visible>
+					<visible>!Skin.HasSetting(sub_Shutdown_Timer)</visible>
 					<description>Shutdown Timer</description>
 					<label>Timer</label>
 					<onclick>AlarmClock($LOCALIZE[20144],XBMC.Shutdown(),)</onclick>
 				</item>
 				<item id="62">
 					<visible>Container(300).HasFocus(22)</visible>
+					<visible>!Skin.HasSetting(sub_Shutdown_Restart)</visible>
 					<description>Restart Button</description>
 					<label>$LOCALIZE[13313]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -640,20 +695,23 @@
 				</item>
 				<item id="63">
 					<visible>Container(300).HasFocus(22)</visible>
+					<visible>!Skin.HasSetting(sub_Shutdown_Reload)</visible>
 					<description>Reload Button</description>
 					<label>Reload</label>
 					<onclick>Skin.Reset(submenu)</onclick>
 					<onclick>XBMC.RestartApp()</onclick>
 				</item>
-				<!--<item id="64">
+				<item id="64">
 					<visible>Container(300).HasFocus(22)</visible>
+					<visible>!Skin.HasSetting(sub_Shutdown_Refresh)</visible>
 					<description>Refresh Button</description>
 					<label>$LOCALIZE[31607]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
 					<onclick>XBMC.ReloadSkin()</onclick>
-				</item> -->
+				</item>
 				<item id="65">
 					<visible>Container(300).HasFocus(22)</visible>
+					<visible>!Skin.HasSetting(sub_Shutdown_Dashboard)</visible>
 					<description>Dashboard Button</description>
 					<label>$LOCALIZE[13006]</label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -662,6 +720,7 @@
 				</item>
 				<item id="66">
 					<visible>Container(300).HasFocus(22)</visible>
+					<visible>!Skin.HasSetting(sub_Shutdown_Suspend)</visible>
 					<description>Suspend</description>
 					<label>$LOCALIZE[13011] </label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -670,6 +729,7 @@
 				</item>
 				<item id="67">
 					<visible>Container(300).HasFocus(22)</visible>
+					<visible>!Skin.HasSetting(sub_Shutdown_Hibernate)</visible>
 					<description>Hibernate</description>
 					<label>$LOCALIZE[13010] </label>
 					<onclick>Skin.Reset(submenu)</onclick>
@@ -678,6 +738,7 @@
 				</item>
 				<item id="68">
 					<visible>Container(300).HasFocus(22)</visible>
+					<visible>!Skin.HasSetting(sub_Shutdown_Logout)</visible>
 					<description>Logout Button</description>
 					<label>$LOCALIZE[20126] </label>
 					<onclick>Skin.Reset(submenu)</onclick>

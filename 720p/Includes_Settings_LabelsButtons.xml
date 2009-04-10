@@ -498,7 +498,10 @@
 				<ondown>8</ondown>
 				<onleft>301</onleft>
 				<onright>301</onright>
-				<visible allowhiddenfocus="true">![Control.HasFocus(7) | Control.HasFocus(301)]</visible>
+
+				<!--<visible allowhiddenfocus="true">![Control.HasFocus(7) | Control.HasFocus(301)]</visible> <<<<<< old -->
+				<visible allowhiddenfocus="true">![Control.HasFocus(301) | Control.HasFocus(7) | Control.HasFocus(345)]</visible><!-- <<<<<< Add this -->
+
 			</control>
 			<control type="button" id="7">
 				<description>FURNITURE</description>
@@ -509,7 +512,10 @@
 				<ondown>8</ondown>
 				<onleft>301</onleft>
 				<onright>301</onright>
-				<visible>Control.HasFocus(7) | Control.HasFocus(301)</visible>
+
+				<!-- <visible>Control.HasFocus(7) | Control.HasFocus(301)</visible>  <<<<<< old -->
+				<visible>Control.HasFocus(7) | Control.HasFocus(301)| Control.HasFocus(345)]</visible><!-- <<<<<< Add this -->
+
 			</control>
 			<control type="label">
 				<description>Furniture Sub Unfocused</description>
@@ -518,6 +524,10 @@
 				<textcolor>FFf5f5f5</textcolor>
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>![Control.HasFocus(7) | Control.HasFocus(301)]</visible>
+
+				<!--<visible>![Control.HasFocus(7) | Control.HasFocus(301)]</visible> <<<<<< old -->
+				<visible>![Control.HasFocus(301) | Control.HasFocus(7) | Control.HasFocus(345)]</visible><!-- <<<<<< Add this -->
+
 			</control>
 			<control type="label">
 				<description>Furniture Sub Unfocused</description>
@@ -525,7 +535,10 @@
 				<label>31123</label>
 				<textcolor>FF262728</textcolor>
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>Control.HasFocus(7) | Control.HasFocus(301)</visible>
+
+				<!-- <visible>Control.HasFocus(7) | Control.HasFocus(301)</visible>  <<<<<< old -->
+				<visible>Control.HasFocus(7) | Control.HasFocus(301)| Control.HasFocus(345)]</visible><!-- <<<<<< Add this -->
+
 			</control>
 			<control type="button" id="8">
 				<description>My Programs</description>

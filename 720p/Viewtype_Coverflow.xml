@@ -274,6 +274,7 @@
 	                </control>
 	            </control>
 	        </control>
+
 	        <control type="group">
 	            <posx>1060</posx>
 	            <visible>!Container.OnNext</visible>
@@ -928,107 +929,111 @@
 	        <visible>Control.IsVisible(55) + Container.OnNext + !Skin.HasSetting(flattenflow)</visible>
 	        <animation effect="slide" end="-90,0" time="250" reversible="false">Hidden</animation>
 	        <control type="group">
-	            <posx>10</posx>
-	            <visible>Container.OnNext</visible>
-	            <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
-	            <animation effect="rotatey" center="-90" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(-7).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow15</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlayAngled</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
+	        	<posx>10</posx>
+	        	<visible>Container.OnNext</visible>
+			<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+			<animation effect="rotatey" center="-90" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+			<control type="group">
+				<control type="image">
+					<include>MovieFlowThumb</include>
+					<info>Container(55).ListItem(-7).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<include>mod_moviegenre_Coverflow15</include><!-- <<<<<< Add this -->
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlayAngled</include>
+				</control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MovieFlowOverlay</include>
+				</control>
+			</control>
 	        </control>
 	        <control type="group">
-	            <posx>100</posx>
-	            <animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(-6).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow1</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlayAngled</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
-	        </control>
+			<posx>100</posx>
+			<animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+			<control type="group">
+				<control type="image">
+					<include>MovieFlowThumb</include>
+					<info>Container(55).ListItem(-6).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<include>mod_moviegenre_Coverflow1</include><!-- <<<<<< Add this -->
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlayAngled</include>
+				</control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MovieFlowOverlay</include>
+				</control>
+			</control>
+		</control>
+
+		<control type="group">
+			<posx>190</posx>
+			<animation effect="rotatey" center="90" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+			<control type="group">
+				<control type="image">
+					<include>MovieFlowThumb</include>
+					<info>Container(55).ListItem(-5).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<include>mod_moviegenre_Coverflow2</include><!-- <<<<<< Add this -->
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlayAngled</include>
+				</control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MovieFlowOverlay</include>
+				</control>
+			</control>
+		</control>
+
+		<control type="group">
+			<posx>280</posx>
+			<animation effect="rotatey" center="180" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+			<control type="group">
+				<control type="image">
+					<include>MovieFlowThumb</include>
+					<info>Container(55).ListItem(-4).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<include>mod_moviegenre_Coverflow3</include><!-- <<<<<< Add this -->
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlayAngled</include>
+				</control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MovieFlowOverlay</include>
+				</control>
+			</control>
+		</control>
+
 	        <control type="group">
-	            <posx>190</posx>
-	            <animation effect="rotatey" center="90" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(-5).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow2</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlayAngled</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
-	        </control>
-	        <control type="group">
-	            <posx>280</posx>
-	            <animation effect="rotatey" center="180" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(-4).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow3</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlayAngled</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
-	        </control>
-	        <control type="group">
-	            <posx>370</posx>
-	            <animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(-3).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow4</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlayAngled</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
-	        </control>
+			<posx>370</posx>
+			<animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+			<control type="group">
+				<control type="image">
+					<include>MovieFlowThumb</include>
+					<info>Container(55).ListItem(-3).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<include>mod_moviegenre_Coverflow4</include><!-- <<<<<< Add this -->
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlayAngled</include>
+				</control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MovieFlowOverlay</include>
+				</control>
+			</control>
+		</control>
+
 	        <control type="group">
 	            <posx>460</posx>
 	            <animation effect="rotatey" center="360" start="-55" end="-55" time="0" condition="true">Conditional</animation>
@@ -1049,58 +1054,58 @@
 	                </control>
 	            </control>
 	        </control>
-	        <control type="group">
-	            <posx>1090</posx>
-	            <visible>!Container.OnNext</visible>
-	            <animation effect="fade" start="0" end="100" delay="0" time="250" reversible="false">Visible</animation>
-	            <animation effect="rotatey" center="1470" start="55" end="55" time="0" condition="true">Conditional</animation>
-	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(6).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow13</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlayAngled</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
+		<control type="group">
+			<posx>1090</posx>
+			<visible>!Container.OnNext</visible>
+			<animation effect="fade" start="0" end="100" delay="0" time="250" reversible="false">Visible</animation>
+			<animation effect="rotatey" center="1470" start="55" end="55" time="0" condition="true">Conditional</animation>
+			<control type="group">
+				<control type="image">
+					<include>MovieFlowThumb</include>
+					<info>Container(55).ListItem(6).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<include>mod_moviegenre_Coverflow13</include><!-- <<<<<< Add this -->
+	                	<control type="image">
+	                    		<description>Glass overlay</description>
+	                    		<include>MovieFlowGlassOverlayAngled</include>
+	                	</control>
+	                	<control type="image">
+	                		<description>Black overlay</description>
+					<include>MovieFlowOverlay</include>
+				</control>
+			</control>
 	        </control>
-	        <control type="group">
-	            <posx>1000</posx>
-	            <animation effect="rotatey" center="1380" start="55" end="55" time="0" condition="true">Conditional</animation>
-	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(5).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow12</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlayAngled</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
+		<control type="group">
+	            	<posx>1000</posx>
+	            	<animation effect="rotatey" center="1380" start="55" end="55" time="0" condition="true">Conditional</animation>
+	            	<control type="group">
+				<control type="image">
+	                    		<include>MovieFlowThumb</include>
+	                    		<info>Container(55).ListItem(5).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+	  			</control>
+				<include>mod_moviegenre_Coverflow12</include><!-- <<<<<< Add this -->
+	               		<control type="image">
+	                    		<description>Glass overlay</description>
+	                    		<include>MovieFlowGlassOverlayAngled</include>
+	                	</control>
+	                	<control type="image">
+	                    		<description>Black overlay</description>
+	                    		<include>MovieFlowOverlay</include>
+	                	</control>
+	            	</control>
 	        </control>
 	        <control type="group">
 	            <posx>910</posx>
 	            <animation effect="rotatey" center="1290" start="55" end="55" time="0" condition="true">Conditional</animation>
 	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(4).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+                    	<control type="image">
+	                    	<include>MovieFlowThumb</include>
+	                    	<info>Container(55).ListItem(4).Icon</info>
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow11</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow11</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1118,9 +1123,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(3).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow10</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow10</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1138,9 +1143,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(2).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow9</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow9</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1158,9 +1163,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(1).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+			<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow8</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow8</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1183,9 +1188,9 @@
                     <control type="image">
 	                        <include>MovieFlowThumb</include>
 	                        <info>Container(55).ListItem(0).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                    </control>
-						<include>mod_moviegenre_Coverflow7</include><!-- <<<<<< Add this -->
+				<include>mod_moviegenre_Coverflow7</include><!-- <<<<<< Add this -->
 	                    <control type="image">
 	                        <description>Glass overlay</description>
 	                        <include>MovieFlowGlassOverlayAngled</include>
@@ -1204,9 +1209,9 @@
                     <control type="image">
 	                        <include>MovieFlowThumb</include>
 	                        <info>Container(55).ListItem(-1).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                    </control>
-						<include>mod_moviegenre_Coverflow6</include><!-- <<<<<< Add this -->
+				<include>mod_moviegenre_Coverflow6</include><!-- <<<<<< Add this -->
 	                    <control type="image">
 	                        <description>Glass overlay</description>
 	                        <include>MovieFlowGlassOverlayAngled</include>
@@ -1232,9 +1237,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(7).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow14</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow14</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1252,9 +1257,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(6).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow13</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow13</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1272,9 +1277,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(5).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow12</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow12</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1292,9 +1297,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(4).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow11</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow11</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1312,9 +1317,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(3).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow10</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow10</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1332,9 +1337,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(2).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow9</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow9</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1354,9 +1359,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-6).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow1</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow1</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1374,9 +1379,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-5).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow2</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow2</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1394,9 +1399,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-4).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow3</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow3</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1414,9 +1419,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-3).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow4</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow4</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1434,9 +1439,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-2).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+			<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow5</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow5</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1454,9 +1459,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-1).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow6</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow6</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1479,9 +1484,9 @@
                     <control type="image">
 	                        <include>MovieFlowThumb</include>
 	                        <info>Container(55).ListItem(0).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                    </control>
-						<include>mod_moviegenre_Coverflow7</include><!-- <<<<<< Add this -->
+				<include>mod_moviegenre_Coverflow7</include><!-- <<<<<< Add this -->
 	                    <control type="image">
 	                        <description>Glass overlay</description>
 	                        <include>MovieFlowGlassOverlay</include>
@@ -1500,9 +1505,9 @@
                     <control type="image">
 	                        <include>MovieFlowThumb</include>
 	                        <info>Container(55).ListItem(1).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                    </control>
-						<include>mod_moviegenre_Coverflow8</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow8</include><!-- <<<<<< Add this -->
 	                    <control type="image">
 	                        <description>Glass overlay</description>
 	                        <include>MovieFlowGlassOverlay</include>
@@ -1534,9 +1539,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-6).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow1</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow1</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1558,9 +1563,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-5).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow2</include><!-- <<<<<< Add this -->
+				<include>mod_moviegenre_Coverflow2</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1582,9 +1587,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-4).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow3</include><!-- <<<<<< Add this -->
+				<include>mod_moviegenre_Coverflow3</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1606,9 +1611,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-3).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow4</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow4</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1630,9 +1635,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-2).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow5</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow5</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1654,9 +1659,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(-1).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow6</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow6</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1678,9 +1683,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(6).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow13</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow13</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1702,9 +1707,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(5).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow12</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow12</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1726,9 +1731,9 @@
                     <control type="image">
 	                    <include>MovieFlowThumb</include>
 	                    <info>Container(55).ListItem(4).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 	                </control>
-					<include>mod_moviegenre_Coverflow11</include><!-- <<<<<< Add this -->
+			<include>mod_moviegenre_Coverflow11</include><!-- <<<<<< Add this -->
 	                <control type="image">
 	                    <description>Glass overlay</description>
 	                    <include>MovieFlowGlassOverlayAngled</include>
@@ -1738,325 +1743,335 @@
 	                    <include>MovieFlowOverlay</include>
 	                </control>
 	            </control>
+	        </control>
+
+		<control type="group">
+			<posx>730</posx>
+			<animation effect="rotatey" center="1110" start="55" end="55" time="0" condition="true">Conditional</animation>
+			<animation type="Conditional" condition="Skin.HasSetting(flattenflow)">
+				<effect type="rotatey" center="1110" start="0" end="-55" time="800" tween="cubic" easing="inout" />
+				<effect type="slide" start="0" end="362" time="800" tween="cubic" easing="inout" />
+			</animation>
+			<control type="group">
+				<control type="image">
+					<include>MovieFlowThumb</include>
+					<info>Container(55).ListItem(3).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<include>mod_moviegenre_Coverflow10</include><!-- <<<<<< Add this -->
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlayAngled</include>
+				</control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MovieFlowOverlay</include>
+				</control>
+			</control>
+	        </control>
+
+		<control type="group">
+			<posx>640</posx>
+			<animation effect="rotatey" center="1020" start="55" end="55" time="0" condition="true">Conditional</animation>
+			<animation type="Conditional" condition="Skin.HasSetting(flattenflow)">
+				<effect type="rotatey" center="1020" start="0" end="-55" time="800" tween="cubic" easing="inout" />
+				<effect type="slide" start="0" end="256" time="800" tween="cubic" easing="inout" />
+			</animation>
+			<control type="group">
+				<control type="image">
+					<include>MovieFlowThumb</include>
+					<info>Container(55).ListItem(2).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+	        	        </control>
+				<include>mod_moviegenre_Coverflow9</include><!-- <<<<<< Add this -->
+		                <control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlayAngled</include>
+		                </control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MovieFlowOverlay</include>
+				</control>
+			</control>
 	        </control>
 	        <control type="group">
-	            <posx>730</posx>
-	            <animation effect="rotatey" center="1110" start="55" end="55" time="0" condition="true">Conditional</animation>
-                <animation type="Conditional" condition="Skin.HasSetting(flattenflow)">
-					<effect type="rotatey" center="1110" start="0" end="-55" time="800" tween="cubic" easing="inout" />
-					<effect type="slide" start="0" end="362" time="800" tween="cubic" easing="inout" />
-				</animation>
-	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(3).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow10</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlayAngled</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
-	        </control>
-	        <control type="group">
-	            <posx>640</posx>
-	            <animation effect="rotatey" center="1020" start="55" end="55" time="0" condition="true">Conditional</animation>
-                <animation type="Conditional" condition="Skin.HasSetting(flattenflow)">
-					<effect type="rotatey" center="1020" start="0" end="-55" time="800" tween="cubic" easing="inout" />
-					<effect type="slide" start="0" end="256" time="800" tween="cubic" easing="inout" />
-				</animation>
-	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(2).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow9</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlayAngled</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
-	        </control>
-	        <control type="group">
-	            <posx>550</posx>
-	            <animation effect="rotatey" center="930" start="55" end="55" time="0" condition="true">Conditional</animation>
-                <animation type="Conditional" condition="Skin.HasSetting(flattenflow)">
-					<effect type="rotatey" center="930" start="0" end="-55" time="800" tween="cubic" easing="inout" />
-					<effect type="slide" start="0" end="151" time="800" tween="cubic" easing="inout" />
-				</animation>
-	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumb</include>
-	                    <info>Container(55).ListItem(1).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow8</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlayAngled</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
-	        </control>
+			<posx>550</posx>
+			<animation effect="rotatey" center="930" start="55" end="55" time="0" condition="true">Conditional</animation>
+			<animation type="Conditional" condition="Skin.HasSetting(flattenflow)">
+				<effect type="rotatey" center="930" start="0" end="-55" time="800" tween="cubic" easing="inout" />
+				<effect type="slide" start="0" end="151" time="800" tween="cubic" easing="inout" />
+			</animation>
+			<control type="group">
+				<control type="image">
+					<include>MovieFlowThumb</include>
+					<info>Container(55).ListItem(1).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<include>mod_moviegenre_Coverflow8</include><!-- <<<<<< Add this -->
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlayAngled</include>
+				</control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MovieFlowOverlay</include>
+				</control>
+			</control>
+		</control>
+
 	        <control type="group">
 	            <posx>505</posx>
 	            <control type="group">
-                    <control type="image">
-	                    <include>MovieFlowThumbMain</include>
-	                    <info>Container(55).ListItem(0).Icon</info>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-	                </control>
-					<include>mod_moviegenre_Coverflow7</include><!-- <<<<<< Add this -->
-	                <control type="image">
-	                    <description>Glass overlay</description>
-	                    <include>MovieFlowGlassOverlay</include>
-	                </control>
-	                <control type="image">
-	                    <description>Black overlay</description>
-	                    <include>MovieFlowOverlay</include>
-	                </control>
-	            </control>
-	        </control>
-	    </control>
-	</include>
+				<control type="image">
+					<include>MovieFlowThumbMain</include>
+					<info>Container(55).ListItem(0).Icon</info>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<include>mod_moviegenre_Coverflow7</include><!-- <<<<<< Add this -->
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlay</include>
+				</control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MovieFlowOverlay</include>
+				</control>
+			</control>
+		</control>
+
+	</control>
+</include>
 
 
 	
-	<include name="Viewtype_Coverflow">
-	    <control type="group">
-	        <visible>Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)</visible>
-	        <include>CoverflowMovies</include>
-	    </control>
-	    <control type="group">
-	        <visible>Window.IsActive(20) | Window.IsActive(500) | Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(2) | Container.Content(episodes)</visible>
-	        <include>CoverflowSquare</include>
-	    </control>
-	    <control type="group">
-	        <include>CoverflowVisible</include>
-	        <control type="wraplist" id="55">
-				<include condition="!Container.Content(episodes) + [Window.IsActive(28) | Window.IsActive(24) | Window.IsActive(25) | Window.IsActive(1)]">MovieFlowGroupVars</include>
-				<include condition="Window.IsActive(20) | Window.IsActive(500) | Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(2)">MusicFlowGroupVars</include>
-	            <onleft>55</onleft>
-	            <onright>55</onright>
-	            <onup>900</onup>
-	            <ondown>60</ondown>
-	            <viewtype label="Panel">list</viewtype>
-	            <pagecontrol>60</pagecontrol>
-	            <orientation>horizontal</orientation>
-	            <scrolltime>250</scrolltime>
-	            <focusposition>3</focusposition>
-				<visible>!Container.Content(episodes)</visible>				
-                <itemlayout height="350" width="196" condition="Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)">
-                    <control type="image">
-                        <include>MovieFlowThumbMain</include>
-                        <info>ListItem.Icon</info>
-						<visible>!Skin.HasSetting(alternativerender) + Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-                    </control>
-                    <control type="image">
-                        <include>MovieFlowThumbMain</include>
-                        <info>ListItem.Icon</info>
-						<visible>Skin.HasSetting(alternativerender) + Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-                    </control>
-					<include>mod_moviegenre_Coverflow21</include><!-- <<<<<< Add this -->
-                    <control type="image">
-                        <description>Glass overlay</description>
-                        <include>MovieFlowGlassOverlay</include>
-						<visible>!Skin.HasSetting(alternativerender) + Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
-                    </control>
-				</itemlayout>
-                <focusedlayout height="350" width="196"	condition="Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)">
-                    <control type="image">
-                        <include>MovieFlowThumbMain</include>
-                        <info>ListItem.Icon</info>
-						<visible>!Skin.HasSetting(alternativerender) + Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-						<animation effect="zoom" start="100" end="110" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
-						<animation effect="zoom" start="110" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55) + Skin.HasSetting(flattenflow)">Unfocus</animation>
-                    </control>
-                    <control type="image">
-                        <include>MovieFlowThumbMain</include>
-                        <info>ListItem.Icon</info>
-						<visible>Skin.HasSetting(alternativerender) + Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
-						<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
-						<animation effect="zoom" start="100" end="110" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
-						<animation effect="zoom" start="110" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55) + Skin.HasSetting(flattenflow)">Unfocus</animation>						
-                    </control>
-					<include>mod_moviegenre_Coverflow20</include><!-- <<<<<< Add this -->
-                    <control type="image">
-                        <description>Glass overlay</description>
-                        <include>MovieFlowGlassOverlay</include>
-						<visible>Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
-						<animation effect="zoom" start="100" end="110" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
-						<animation effect="zoom" start="110" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55) + Skin.HasSetting(flattenflow)">Unfocus</animation>						
-                    </control>
-				</focusedlayout>
-                <itemlayout height="350" width="250" condition="Window.IsActive(20) | Window.IsActive(500) | Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(2)">
-                    <control type="image">
-                        <include>MusicFlowThumbMain</include>
-                        <info>ListItem.Icon</info>
-						<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)]</visible>
-                    </control>
-                    <control type="image">
-                        <description>Glass overlay</description>
-                        <include>MusicFlowGlassOverlay</include>
-						<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)]</visible>
-                    </control>
-                    <control type="image">
-                        <description>Black overlay</description>
-                        <include>MusicFlowOverlay</include>
-						<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)] + !Control.HasFocus(55)</visible>
-                    </control>
-				</itemlayout>
-                <focusedlayout height="350" width="250" condition="Window.IsActive(20) | Window.IsActive(500) | Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(2)">
-                    <control type="image">
-                        <include>MusicFlowThumbMain</include>
-                        <info>ListItem.Icon</info>
-						<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)]</visible>
-						<animation effect="zoom" start="100" end="110" center="135,160" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
-						<animation effect="zoom" start="110" end="100" center="135,160" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(57) + [Skin.HasSetting(flattenflow) | Container.Content(episodes)]">Unfocus</animation>						
-                    </control>
-                    <control type="image">
-                        <description>Glass overlay</description>
-                        <include>MusicFlowGlassOverlay</include>
-						<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)]</visible>
-						<animation effect="zoom" start="100" end="110" center="135,160" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
-						<animation effect="zoom" start="110" end="100" center="135,160" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(57) + [Skin.HasSetting(flattenflow) | Container.Content(episodes)]">Unfocus</animation>						
-                    </control>
-                    <control type="image">
-                        <description>Black overlay</description>
-                        <include>MusicFlowOverlay</include>
-						<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)] + !Control.HasFocus(55)</visible>
-						<animation effect="zoom" start="100" end="110" center="135,160" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
-						<animation effect="zoom" start="110" end="100" center="135,160" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(57) + [Skin.HasSetting(flattenflow) | Container.Content(episodes)]">Unfocus</animation>						
-                    </control>
-				</focusedlayout>				
+<include name="Viewtype_Coverflow">
+	<control type="group">
+		<visible>Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)</visible>
+		<include>CoverflowMovies</include>
+	</control>
+
+	<control type="group">
+		<visible>Window.IsActive(20) | Window.IsActive(500) | Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(2) | Container.Content(episodes)</visible>
+		<include>CoverflowSquare</include>
+	</control>
+
+	<control type="group">
+		<include>CoverflowVisible</include>
+
+		<control type="wraplist" id="55">
+			<include condition="!Container.Content(episodes) + [Window.IsActive(28) | Window.IsActive(24) | Window.IsActive(25) | Window.IsActive(1)]">MovieFlowGroupVars</include>
+			<include condition="Window.IsActive(20) | Window.IsActive(500) | Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(2)">MusicFlowGroupVars</include>
+			<onleft>55</onleft>
+			<onright>55</onright>
+			<onup>900</onup>
+			<ondown>60</ondown>
+			<viewtype label="Panel">list</viewtype>
+			<pagecontrol>60</pagecontrol>
+			<orientation>horizontal</orientation>
+			<scrolltime>250</scrolltime>
+			<focusposition>3</focusposition>
+			<visible>!Container.Content(episodes)</visible>
+
+			<itemlayout height="350" width="196" condition="Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)">
+				<control type="image">
+					<include>MovieFlowThumbMain</include>
+					<info>ListItem.Icon</info>
+					<visible>!Skin.HasSetting(alternativerender) + Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<control type="image">
+					<include>MovieFlowThumbMain</include>
+					<info>ListItem.Icon</info>
+					<visible>Skin.HasSetting(alternativerender) + Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+				<include>mod_moviegenre_Coverflow21</include><!-- <<<<<< Add this -->
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlay</include>
+					<visible>!Skin.HasSetting(alternativerender) + Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
+				</control>
+			</itemlayout>
+
+			<focusedlayout height="350" width="196"	condition="Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)">
+				<control type="image">
+					<include>MovieFlowThumbMain</include>
+					<info>ListItem.Icon</info>
+					<visible>!Skin.HasSetting(alternativerender) + Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+					<animation effect="zoom" start="100" end="110" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+					<animation effect="zoom" start="110" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55) + Skin.HasSetting(flattenflow)">Unfocus</animation>
+				</control>
+				<control type="image">
+					<include>MovieFlowThumbMain</include>
+					<info>ListItem.Icon</info>
+					<visible>Skin.HasSetting(alternativerender) + Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
+					<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
+					<animation effect="zoom" start="100" end="110" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+					<animation effect="zoom" start="110" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55) + Skin.HasSetting(flattenflow)">Unfocus</animation>						
+				</control>
+				<include>mod_moviegenre_Coverflow20</include><!-- <<<<<< Add this -->
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MovieFlowGlassOverlay</include>
+					<visible>Skin.HasSetting(flattenflow) + !Control.IsVisible(9000)</visible>
+					<animation effect="zoom" start="100" end="110" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+					<animation effect="zoom" start="110" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55) + Skin.HasSetting(flattenflow)">Unfocus</animation>						
+				</control>
+			</focusedlayout>
+
+			<itemlayout height="350" width="250" condition="Window.IsActive(20) | Window.IsActive(500) | Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(2)">
+				<control type="image">
+					<include>MusicFlowThumbMain</include>
+					<info>ListItem.Icon</info>
+					<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)]</visible>
+				</control>
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MusicFlowGlassOverlay</include>
+					<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)]</visible>
+				</control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MusicFlowOverlay</include>
+					<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)] + !Control.HasFocus(55)</visible>
+				</control>
+			</itemlayout>
+
+			<focusedlayout height="350" width="250" condition="Window.IsActive(20) | Window.IsActive(500) | Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(2)">
+				<control type="image">
+					<include>MusicFlowThumbMain</include>
+					<info>ListItem.Icon</info>
+					<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)]</visible>
+					<animation effect="zoom" start="100" end="110" center="135,160" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+					<animation effect="zoom" start="110" end="100" center="135,160" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(57) + [Skin.HasSetting(flattenflow) | Container.Content(episodes)]">Unfocus</animation>						
+				</control>
+				<control type="image">
+					<description>Glass overlay</description>
+					<include>MusicFlowGlassOverlay</include>
+					<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)]</visible>
+					<animation effect="zoom" start="100" end="110" center="135,160" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+					<animation effect="zoom" start="110" end="100" center="135,160" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(57) + [Skin.HasSetting(flattenflow) | Container.Content(episodes)]">Unfocus</animation>						
+				</control>
+				<control type="image">
+					<description>Black overlay</description>
+					<include>MusicFlowOverlay</include>
+					<visible>[[Skin.HasSetting(flattenflow) + !Control.IsVisible(971)] | Container.Content(episodes)] + !Control.HasFocus(55)</visible>
+					<animation effect="zoom" start="100" end="110" center="135,160" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+					<animation effect="zoom" start="110" end="100" center="135,160" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(57) + [Skin.HasSetting(flattenflow) | Container.Content(episodes)]">Unfocus</animation>						
+				</control>
+			</focusedlayout>				
 	        </control>
 
-	        <control type="scrollbar" id="60">
-	            <posx>67</posx>
-	            <posy>485</posy>
-	            <width>1147</width>
-	            <height>41</height>
-	            <visible>Control.IsVisible(55)</visible>
-	            <texturesliderbackground>windows/scrollbarbackwide_nofocus.png</texturesliderbackground>
-	            <texturesliderbar>-</texturesliderbar>
-	            <texturesliderbarfocus>-</texturesliderbarfocus>
-	            <textureslidernib>windows/scrollbarnub-nofocus.png</textureslidernib>
-	            <textureslidernibfocus>windows/scrollbarnub-focus.png</textureslidernibfocus>
-	            <pulseonselect></pulseonselect>
-	            <orientation>horizontal</orientation>
-	            <showonepage>false</showonepage>
-	            <onup>55</onup>
-	            <ondown>55</ondown>
-	            <onleft>60</onleft>
-	            <onright>60</onright>
-	            <include>Animation_CommonFade</include>
+		<control type="scrollbar" id="60">
+			<posx>67</posx>
+			<posy>485</posy>
+			<width>1147</width>
+			<height>41</height>
+			<visible>Control.IsVisible(55)</visible>
+			<texturesliderbackground>windows/scrollbarbackwide_nofocus.png</texturesliderbackground>
+			<texturesliderbar>-</texturesliderbar>
+			<texturesliderbarfocus>-</texturesliderbarfocus>
+			<textureslidernib>windows/scrollbarnub-nofocus.png</textureslidernib>
+			<textureslidernibfocus>windows/scrollbarnub-focus.png</textureslidernibfocus>
+			<pulseonselect></pulseonselect>
+			<orientation>horizontal</orientation>
+			<showonepage>false</showonepage>
+			<onup>55</onup>
+			<ondown>55</ondown>
+			<onleft>60</onleft>
+			<onright>60</onright>
+			<include>Animation_CommonFade</include>
 	        </control>
+
+		<include>Furniture_PanelMediaFlags</include>
 			
-			<include>Furniture_PanelMediaFlags</include>			
-			
-	        <control type="group">
-	            <include>Animation_CommonFade</include>
-                <control type="fadelabel">
-                    <label>31609</label>
-                    <label>31610</label>					
-					<scrollout>false</scrollout>
-					<pauseatend>3000</pauseatend>
-					<scroll>false</scroll>
-                    <include>FlowMainLabel</include>
-					<visible>Window.IsActive(25) + stringcompare(container(55).numitems,0)</visible>
-	                <animation effect="slide" start="0,10" end="0,10" time="0" condition="true">Conditional</animation>					
-                </control>
-                <control type="fadelabel">
-                    <label>31609</label>
-                    <label>31611</label>					
-					<scrollout>false</scrollout>
-					<pauseatend>3000</pauseatend>
-					<scroll>false</scroll>
-                    <include>FlowMainLabel</include>
-					<visible>Window.IsActive(502) + stringcompare(container(55).numitems,0)</visible>
-	                <animation effect="slide" start="0,10" end="0,10" time="0" condition="true">Conditional</animation>					
-                </control>						
-	            <control type="label">
-	                <description>Title</description>
-	                <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
-	                <include>FlowMainLabel</include>
-	                <animation effect="slide" start="0,0" end="0,10" time="200" condition="IsEmpty(Control.GetLabel(75))">Conditional</animation>
-	            </control>
-	            <control type="label" id="75">
-	                <description>Detail</description>
-	                <label>$INFO[ListItem.Label2]</label>
-	                <include>FlowDetailLabel</include>
-	                <visible>Window.IsActive(501) | Window.IsActive(24)</visible>
-	            </control>
-	            <control type="label" id="75">
-	                <description>Artist</description>
-	                <info>ListItem.Artist</info>
-	                <include>FlowDetailLabel</include>
-	                <visible>Container.Content(albums)</visible>
-	            </control>
-	            <control type="label" id="75">
-	                <description>Album and Artist</description>
-	                <label>$INFO[ListItem.Album,, -] $INFO[ListItem.Artist]</label>
-	                <include>FlowDetailLabel</include>
-	                <visible>Container.Content(songs)</visible>
-	            </control>
-	            <control type="label" id="75">
-	                <description>Detail</description>
-	                <info>ListItem.Year</info>
-	                <include>FlowDetailLabel</include>
-	                <visible>Container.Content(movies)</visible>
-	            </control>
-	            <control type="label" id="75">
-	                <description>Detail</description>
-	                <label>$INFO[ListItem.Episode] EPISODES</label>
-	                <include>FlowDetailLabel</include>
-	                <visible>Container.Content(tvshows) + !IsEmpty(ListItem.Episode)</visible>
-	            </control>
-	            <control type="label" id="75">
-	                <description>Detail</description>
-	                <label>$INFO[ListItem.TVShowTitle]</label>
-	                <include>FlowDetailLabel</include>
-	                <visible>Container.Content(seasons)</visible>
-	            </control>
-	            <control type="label" id="75">
-	                <description>Detail</description>
-	                <label>$LOCALIZE[31062] $INFO[ListItem.Season], $LOCALIZE[31063] $INFO[ListItem.Episode]</label>
-	                <include>FlowDetailLabel</include>
-	                <visible>Container.Content(episodes) + !IsEmpty(ListItem.Episode)</visible>
-	            </control>
-	            <control type="label" id="75">
-	                <description>Detail</description>
-	                <label fallback="416">$INFO[ListItem.PictureResolution]</label>
-	                <include>FlowDetailLabel</include>
-	                <visible>Window.IsActive(2) + !IsEmpty(ListItem.Label2)</visible>
-	            </control>
-	            <control type="image">
-	                <include>FlowDetailLabel</include>
-	                <include>StarRatingImage</include>
-	                <visible>![Container.Content(albums) | Container.Content(songs)] + !IsEmpty(ListItem.Rating)</visible>
-	            </control>
-	        </control>
-	    </control>
-	    <control type="group">
-	        <include>CoverflowVisible</include>
-	    </control>
+		<control type="group">
+			<include>Animation_CommonFade</include>
+			<control type="fadelabel">
+				<label>31609</label>
+				<label>31610</label>					
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<scroll>false</scroll>
+				<include>FlowMainLabel</include>
+				<visible>Window.IsActive(25) + stringcompare(container(55).numitems,0)</visible>
+				<animation effect="slide" start="0,10" end="0,10" time="0" condition="true">Conditional</animation>					
+			</control>
+			<control type="fadelabel">
+				<label>31609</label>
+				<label>31611</label>					
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<scroll>false</scroll>
+				<include>FlowMainLabel</include>
+				<visible>Window.IsActive(502) + stringcompare(container(55).numitems,0)</visible>
+				<animation effect="slide" start="0,10" end="0,10" time="0" condition="true">Conditional</animation>					
+			</control>						
+			<control type="label">
+				<description>Title</description>
+				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+				<include>FlowMainLabel</include>
+				<animation effect="slide" start="0,0" end="0,10" time="200" condition="IsEmpty(Control.GetLabel(75))">Conditional</animation>
+			</control>
+			<control type="label" id="75">
+				<description>Detail</description>
+				<label>$INFO[ListItem.Label2]</label>
+				<include>FlowDetailLabel</include>
+				<visible>Window.IsActive(501) | Window.IsActive(24)</visible>
+			</control>
+			<control type="label" id="75">
+				<description>Artist</description>
+				<info>ListItem.Artist</info>
+				<include>FlowDetailLabel</include>
+				<visible>Container.Content(albums)</visible>
+			</control>
+			<control type="label" id="75">
+				<description>Album and Artist</description>
+				<label>$INFO[ListItem.Album,, -] $INFO[ListItem.Artist]</label>
+				<include>FlowDetailLabel</include>
+				<visible>Container.Content(songs)</visible>
+			</control>
+			<control type="label" id="75">
+				<description>Detail</description>
+				<info>ListItem.Year</info>
+				<include>FlowDetailLabel</include>
+				<visible>Container.Content(movies)</visible>
+			</control>
+			<control type="label" id="75">
+				<description>Detail</description>
+				<label>$INFO[ListItem.Episode] EPISODES</label>
+				<include>FlowDetailLabel</include>
+				<visible>Container.Content(tvshows) + !IsEmpty(ListItem.Episode)</visible>
+			</control>
+			<control type="label" id="75">
+				<description>Detail</description>
+				<label>$INFO[ListItem.TVShowTitle]</label>
+				<include>FlowDetailLabel</include>
+				<visible>Container.Content(seasons)</visible>
+			</control>
+			<control type="label" id="75">
+				<description>Detail</description>
+				<label>$LOCALIZE[31062] $INFO[ListItem.Season], $LOCALIZE[31063] $INFO[ListItem.Episode]</label>
+				<include>FlowDetailLabel</include>
+				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Episode)</visible>
+			</control>
+			<control type="label" id="75">
+				<description>Detail</description>
+				<label fallback="416">$INFO[ListItem.PictureResolution]</label>
+				<include>FlowDetailLabel</include>
+				<visible>Window.IsActive(2) + !IsEmpty(ListItem.Label2)</visible>
+			</control>
+			<control type="image">
+				<include>FlowDetailLabel</include>
+				<!--<include>StarRatingImage</include>-->
+				<visible>![Container.Content(albums) | Container.Content(songs)] + !IsEmpty(ListItem.Rating)</visible>
+			</control>
+		</control>
+	</control>
+	<control type="group">
+		<include>CoverflowVisible</include>
+	</control>
 
-	</include>
-
+</include>
 </includes>

@@ -179,7 +179,11 @@
 		<orientation>horizontal</orientation>
 		<focusposition>2</focusposition>
 		<scrolltime>200</scrolltime>
-		<visible>![Control.HasFocus(301) | Control.HasFocus(7) | Control.HasFocus(10)]</visible>
+
+		<!--<visible>![Control.HasFocus(301) | Control.HasFocus(7) | Control.HasFocus(10)]</visible> <<<<<< old -->
+		<visible>![Control.HasFocus(301) | Control.HasFocus(7) | Control.HasFocus(10) | Control.HasFocus(345)]</visible><!-- <<<<<< Add this -->
+
+
 		<animation effect="fade" start="0" end="100" time="200" condition="!Window.Previous(56) + !Window.Previous(12) + !Window.Previous(13) + !Window.Previous(14) + !Window.Previous(15) + !Window.Previous(16) + !Window.Previous(17) + !Window.Previous(18) + !Window.Previous(19)">WindowOpen</animation>
 		<itemlayout width="184" height="40">
 			<control type="label">
@@ -317,13 +321,22 @@
 		<width>840</width>
 		<onleft>301</onleft>
 		<onright>301</onright>
-		<onup>7</onup>
+
+		
+		<onup>345</onup><!-- <<<<<< Add this -->
+		<!--<onup>7</onup> <<<<<< old -->
+
 		<ondown>7</ondown>
 		<viewtype>list</viewtype>
 		<orientation>horizontal</orientation>
 		<focusposition>2</focusposition>
 		<scrolltime>200</scrolltime>
-		<visible allowhiddenfocus="true">Control.HasFocus(301) | Control.HasFocus(7)</visible>
+
+		<!--<visible allowhiddenfocus="true">Control.HasFocus(301) | Control.HasFocus(7)</visible> <<<<<< old -->
+		<visible allowhiddenfocus="true">Control.HasFocus(301) | Control.HasFocus(7) | Control.HasFocus(345)</visible><!-- <<<<<< Add this -->
+
+		<include>homesubmenu_Customiseanimation</include><!-- <<<<< ADD this -->
+
 		<animation effect="fade" start="0" end="100" time="200" condition="!Window.Previous(56) + !Window.Previous(12) + !Window.Previous(13) + !Window.Previous(14) + !Window.Previous(15) + !Window.Previous(16) + !Window.Previous(17) + !Window.Previous(18) + !Window.Previous(19)">WindowOpen</animation>
 		<itemlayout width="184" height="40">
 			<control type="label">
