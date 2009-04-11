@@ -266,13 +266,21 @@
 	<control type="group">
 		<description>31086</description>
 		<include>Labels_MainLabelGroup</include>
-		<visible>Control.HasFocus(301)</visible>
+		<!--<visible>Control.HasFocus(301)</visible> <<<<< Old -->	
+		<visible>Control.HasFocus(301)|Control.HasFocus(345)</visible><!-- <<<<< ADD this -->	
 
 		<control type="label">
+			<visible>Control.HasFocus(301)</visible><!-- <<<<< ADD this -->
 			<include>Labels_MainLabelBigVars</include>
-			<label>$LOCALIZE[31104] $INFO[Control.GetLabel(301)] $LOCALIZE[31105]</label>
+			<label>$LOCALIZE[31104] $INFO[Container(301).ListItem.Label]$INFO[Container(301).ListItem.Label2] $LOCALIZE[31105]</label>
 		</control>
-
+<!-- ADD this >>>>> -->
+		<control type="label">
+			<visible>Control.HasFocus(345)</visible>
+			<include>Labels_MainLabelBigVars</include>
+			<label>$LOCALIZE[31104] $INFO[Container(301).ListItem.Label]$INFO[Container(301).ListItem.Label2] - $INFO[Container(345).ListItem.Label]$INFO[Container(345).ListItem.Label2] $LOCALIZE[31105]</label>
+		</control>
+<!-- <<<<< ADD this -->
 		<control type="label">
 			<include>Labels_MainLabelSmallVars</include>
 			<label>31088</label>
