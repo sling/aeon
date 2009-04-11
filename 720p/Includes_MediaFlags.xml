@@ -177,6 +177,12 @@
 			<visible>substring(listitem.studio,mono)</visible>
 		</control>
 
+		<control type="image" id="92">
+			<include>Furniture_MovieInfoFlagSound</include>
+			<texture>flags/info/dd21.png</texture>
+			<visible>substring(listitem.studio,3ch) + substring(listitem.studio,ac-3)</visible>
+		</control>
+
 		<control type="image" id="93">
 			<include>Furniture_MovieInfoFlagSubs</include>
 			<texture>flags/info/cc.png</texture>
