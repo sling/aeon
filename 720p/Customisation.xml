@@ -272,9 +272,15 @@
 		<control type="radiobutton" id="708">
 			<visible>!Skin.HasSetting(moviegenre_onoff)</visible>
 			<include>Objects_SettingsDefaultRadioButton</include>
-			<label>movie genre default image on/off</label>
+			<label>movie genre fallback image on/off</label>
 			<onclick>Skin.ToggleSetting(moviegenre_default_onoff)</onclick>
 			<selected>!Skin.HasSetting(moviegenre_default_onoff)</selected>
+		</control>
+		<control type="radiobutton" id="709">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>Genre fanart image on/off</label>
+			<onclick>Skin.ToggleSetting(genre_fanart_onoff)</onclick>
+			<selected>skin.HasSetting(genre_fanart_onoff)</selected>
 		</control>			
 	<!-- <<<<< ADD this -->
 	</control>

@@ -9,8 +9,9 @@
 		<info>Skin.String(CustomMovies)</info>
 		<visible>!Skin.String(CustomMoviesFolder)</visible>
 		<visible>Skin.HasSetting(videomovies)</visible>
-		<visible>Skin.HasSetting(nomoviefanart)|IsEmpty(listitem.property(fanart_image))</visible> 
-		<visible>[IsEmpty(Fanart.Image)+IsEmpty(listitem.property(fanart_image))] | Skin.HasSetting(notvfanart)</visible> 		
+		<visible>Skin.HasSetting(nomoviefanart)|IsEmpty(listitem.property(fanart_image))</visible>
+		<visible>[IsEmpty(Fanart.Image)+IsEmpty(listitem.property(fanart_image))] | Skin.HasSetting(notvfanart)</visible>
+		<visible>!Skin.HasSetting(genre_fanart_onoff)</visible><!-- <<<<< ADD this -->
 	</control>
 
 	<control type="multiimage">
@@ -18,7 +19,8 @@
 		<info>Skin.String(CustomMoviesFolder)</info>
 		<visible>Skin.String(CustomMoviesFolder)</visible>
 		<visible>Skin.HasSetting(videomovies)</visible>
-		<animation effect="fade" start="0" end="100" time="300" condition="Skin.HasSetting(nomoviefanart)|IsEmpty(listitem.property(fanart_image))">Conditional</animation>		
+		<animation effect="fade" start="0" end="100" time="300" condition="Skin.HasSetting(nomoviefanart)|IsEmpty(listitem.property(fanart_image))">Conditional</animation>	
+		<visible>!Skin.HasSetting(genre_fanart_onoff)</visible><!-- <<<<< ADD this -->
 	</control>
 
 	<control type="multiimage">
@@ -27,6 +29,7 @@
 		<info>Skin.String(CustomTV)</info>
 		<visible>!Skin.String(CustomTVFolder)</visible>
 		<visible>Skin.HasSetting(videotv)</visible>
+		<visible>!Skin.HasSetting(genre_fanart_onoff)</visible><!-- <<<<< ADD this -->
 	</control>
 
 	<control type="multiimage">
@@ -34,7 +37,17 @@
 		<info>Skin.String(CustomTVFolder)</info>
 		<visible>Skin.String(CustomTVFolder)</visible>
 		<visible>Skin.HasSetting(videotv)</visible>
+		<visible>!Skin.HasSetting(genre_fanart_onoff)</visible><!-- <<<<< ADD this -->
 	</control>
+
+<!-- <<<<< ADD this -->	
+	<control type="image">
+		<include>Background_ImageFolder</include>
+		<fadetime>400</fadetime>
+		<texture>genrefanart/$INFO[ListItem.Label].jpg</texture>
+	</control>
+<!-- <<<<< ADD this -->	
+
 
 	<control type="largeimage" id="102">
 		<include>FullscreenDimensions</include>

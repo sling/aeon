@@ -9,6 +9,7 @@
 		<effect type="zoom" start="20" end="100" center="auto" time="350" delay="200" tween="Cubic" asing="inout" />
 		<effect type="fade" start="0" end="100" time="350" delay="200" />
 	</animation>
+	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 </include>
 
 <include name="homesubmenu_Customiseanimation2">
@@ -32,9 +33,10 @@
 	<control type="group">
 		<posx>328</posx>
 		<posy>-21</posy>
-		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 		<control type="image">
 			<description>Panel</description>
+			<visible>Control.HasFocus(345)</visible>
+			<include>homesubmenu_Customiseanimation2</include>
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>20</height>
@@ -43,6 +45,8 @@
 			<colordiffuse>FFFFFFFF</colordiffuse>
 		</control>
   		<control type="label">
+			<visible>Control.HasFocus(345)</visible>
+			<include>homesubmenu_Customiseanimation2</include>
 			<posx>10</posx>
 	   		<posy>0</posy>
     			<width>164</width>
