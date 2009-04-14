@@ -78,6 +78,7 @@
 				<onclick>Skin.SetBool(bmtransit)</onclick>				
 				<onclick>XBMC.ActivateWindow(604)</onclick>
 			</control>
+			<!--
 			<control type="button" id="803">
 				<description>Assistant</description>
 				<label>31202</label>
@@ -85,13 +86,22 @@
 				<onclick>Skin.SetBool(bmtransit)</onclick>				
 				<onclick>XBMC.ActivateWindow(605)</onclick>
 			</control>
+			-->
+			<!-- Add this >>>>>> -->
+			<control type="togglebutton" id="803">
+				<description>kiosk</description>
+				<label>KIOSK: ON</label>
+				<altlabel>KIOSK: OFF</altlabel>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>Skin.Togglesetting(kiosk)</onclick>
+			</control>
+			<!-- <<<<<< Add this -->
 			<control type="togglebutton" id="804">
 				<description>Home Visualiser</description>
 				<label>31203</label>
 				<altlabel>31204</altlabel>
 				<include>Objects_ContextMenuButton</include>
 				<onclick>Skin.Togglesetting(homevis)</onclick>
-				<usealttexture>Skin.HasSetting(homevis)</usealttexture>
 			</control>
 			<control type="button" id="805">
 				<description>Now Playing</description>
