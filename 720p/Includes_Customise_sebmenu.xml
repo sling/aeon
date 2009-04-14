@@ -123,6 +123,11 @@
 				<include>VirtualMainMenu_Label</include>
 				<info>ListItem.Label2</info>
 				<textcolor>48000000</textcolor>
+			</control>
+			<control type="label">
+				<include>VirtualMainMenu_Label</include>
+				<info>ListItem.Label2</info>
+				<textcolor>48000000</textcolor>
 				<include>Animation_ButtonFocusFade</include>
 			</control>
 		</focusedlayout>
