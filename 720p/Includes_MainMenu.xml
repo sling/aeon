@@ -181,6 +181,7 @@
 				<label>31019</label>
 				<onclick>XBMC.Shutdown()</onclick>
 				<visible>Skin.HasSetting(shutdown)</visible>
+				<visible>![Skin.HasSetting(kiosk)+Skin.HasSetting(kiosk_Shutdown)]</visible>
 			</item>			
 		</content>
 	</control>

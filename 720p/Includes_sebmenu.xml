@@ -571,6 +571,7 @@
 					<visible>Skin.HasSetting(nosettings)</visible>
 					<visible>Container(300).HasFocus(2)</visible>
 					<visible>!Skin.HasSetting(sub_Programs_settings)</visible>
+					<visible>!Skin.HasSetting(kiosk)</visible>
 				</item>
 				<item id="54">
 					<visible>Container(300).HasFocus(2)</visible>
@@ -639,6 +640,7 @@
 					<onclick>XBMC.ActivateWindow(4)</onclick>
 					<visible>Skin.HasSetting(nosettings)</visible>
 					<visible>!Skin.HasSetting(sub_Programs_settings)</visible>
+					<visible>!Skin.HasSetting(kiosk)</visible>
 				</item>
 				<item id="58">
 					<visible>Container(300).HasFocus(2)</visible>

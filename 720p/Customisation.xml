@@ -59,7 +59,14 @@
 			<onclick>Skin.ToggleSetting(kiosk)</onclick>
 			<selected>Skin.HasSetting(kiosk)</selected>
 		</control>
-		
+		<!-- ADD this >>>>> -->
+		<control type="radiobutton" id="406">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>Hide Shutdown when Kiosk mode is on...</label>
+			<onclick>Skin.ToggleSetting(kiosk_Shutdown)</onclick>
+			<selected>Skin.HasSetting(kiosk_Shutdown)</selected>
+		</control>
+		<!-- <<<<< ADD this -->
 		<control type="radiobutton" id="404">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31294</label>
