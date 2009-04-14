@@ -362,6 +362,21 @@
 				<onclick>Skin.Reset(sub_music_Party)</onclick>
 			</item>
 
+			<item id="42">
+				<visible>Container(301).HasFocus(1)</visible>
+				<visible>Skin.HasSetting(sub_music_fm)</visible>
+				<description>Last.FM</description>
+				<label>$LOCALIZE[15200]</label>
+				<onclick>Skin.Reset(sub_music_fm)</onclick>
+			</item>
+			<item id="42">
+				<visible>Container(301).HasFocus(1)</visible>
+				<visible>!Skin.HasSetting(sub_music_fm)</visible>
+				<description>Last.FM</description>
+				<label2>$LOCALIZE[15200]</label2>
+				<onclick>Skin.SetBool(sub_music_fm)</onclick>
+			</item>
+
 			<item id="31">
 				<visible>Container(301).HasFocus(1)</visible>
 				<visible>!Skin.HasSetting(sub_music_files)</visible>
