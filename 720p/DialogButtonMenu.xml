@@ -93,7 +93,10 @@
 				<label>KIOSK: ON</label>
 				<altlabel>KIOSK: OFF</altlabel>
 				<include>Objects_ContextMenuButton</include>
+      				<alttexturefocus>dialogs/context_highlight.png</alttexturefocus>
+      				<alttexturenofocus>dialogs/context_nofocus.png</alttexturenofocus>
 				<onclick>Skin.Togglesetting(kiosk)</onclick>
+				<usealttexture>!Skin.HasSetting(kiosk)</usealttexture>
 			</control>
 			<!-- <<<<<< Add this -->
 			<control type="togglebutton" id="804">
