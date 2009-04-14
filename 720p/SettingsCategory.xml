@@ -1,5 +1,5 @@
 <window id="12">
-	<defaultcontrol always="true">3</defaultcontrol>
+	<defaultcontrol>3</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 
@@ -12,7 +12,7 @@
 	</control>
 
 	<control type="group">
-		<include>FullScreenDimensions</include>
+		<include>FullscreenDimensions</include>
 		<animation type="WindowOpen" reversible="false" condition="!Window.Previous(4)">
 			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
 			<effect type="fade" start="0" end="100" time="300" />
