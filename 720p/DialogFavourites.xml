@@ -1,3 +1,106 @@
 <window type="dialog" id="134">
+<defaultcontrol always="true">450</defaultcontrol>
+<animation type="WindowOpen" reversible="false">
+	<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+	<effect type="fade" start="0" end="100" time="300" />
+</animation>
+<animation type="WindowClose" reversible="false">
+	<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+	<effect type="fade" start="100" end="0" time="200" />
+</animation>	
+<controls>
 
+<control type="image">
+	<description>Darken screen for Context Menu etc.</description>
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>1280</width>
+	<height>720</height>
+	<texture>common/black.png</texture>
+	<colordiffuse>d7FFFFFF</colordiffuse>
+	<include>Animation_CommonFade</include>
+	<visible>Control.HasFocus(450)</visible>
+</control>
+
+<control type="group">
+	<posx>505</posx>
+	<control type="image">
+		<description>background top image</description>
+		<posx>0</posx>
+		<posy>185</posy>
+		<width>270</width>
+		<height>15</height>
+		<texture border="4">dialogs/context_top.png</texture>
+	</control>
+	<control type="image">
+		<description>background image</description>
+		<posx>0</posx>
+		<posy>200</posy>
+		<width>270</width>
+		<height>350</height>
+		<texture border="4">dialogs/context_middle.png</texture>
+	</control>
+	<control type="image">
+		<description>background bottom image</description>
+		<posx>0</posx>
+		<posy>550</posy>
+		<width>270</width>
+		<height>16</height>
+		<texture border="4">dialogs/context_bottom.png</texture>
+	</control>
+        <control type="list" id="450">
+		<posx>5</posx>
+		<posy>200</posy>
+		<width>260</width>
+		<height>400</height>
+		<onleft>-</onleft>
+		<onright>-</onright>
+		<onup>450</onup>
+		<ondown>450</ondown>
+
+		<itemlayout height="35">
+			<control type="image">
+				<texture border="4">dialogs/context_nofocus.png</texture>
+				<height>34</height>
+				<width>264</width>
+				<colordiffuse>aaffffff</colordiffuse>
+			</control>
+			<control type="label">
+				<label>$INFO[ListItem.Label]</label>
+				<posx>132</posx>
+				<posy>5</posy>
+				<height>34</height>
+				<width>245</width>
+				<align>center</align>
+				<font>Font_ContextMenuButton</font>
+				<textcolor>FF8f8f8f</textcolor>
+				<colordiffuse>FFffffff</colordiffuse>
+			</control>
+		</itemlayout>
+
+		<focusedlayout height="35">
+			<control type="image">
+				<texture border="4">dialogs/context_highlight.png</texture>
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>34</height>
+				<width>264</width>
+				<colordiffuse>aaffffff</colordiffuse>
+			</control>
+			<control type="label">
+				<label>$INFO[ListItem.Label]</label>
+				<posx>132</posx>
+				<posy>5</posy>
+				<height>34</height>
+				<width>245</width>
+				<align>center</align>
+				<font>Font_ContextMenuButton</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<colordiffuse>FFffffff</colordiffuse>
+			</control>
+		</focusedlayout>
+	</control>
+</control>
+
+</controls>
 </window>
