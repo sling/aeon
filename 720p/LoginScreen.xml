@@ -98,7 +98,7 @@
 		<scroll>true</scroll>
 		<info>ListItem.Label</info>
 		<include>selectedcolor</include>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Control.IsVisible(52)</visible>
 	</control>
 	<control type="label">
@@ -111,7 +111,7 @@
 		<textcolor>90cbcbcb</textcolor>
 		<info>ListItem.Label2</info>
 		<include>selectedcolor</include>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Control.IsVisible(52)</visible>
 	</control>
 
@@ -130,7 +130,7 @@
 		<onright>52</onright>
 		<onup>52</onup>
 		<ondown>52</ondown>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>!Window.IsActive(130) + !Window.IsActive(131)</visible>
 	</control>
 	<include>Lines</include>

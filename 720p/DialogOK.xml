@@ -42,7 +42,7 @@
 			<font>font10</font>
 			<align>center</align>
 			<textcolor>FFffffff</textcolor>
-			<include>DialogInfo</include>
+			
 		</control>
 
 		<control type="label" id="4">
@@ -53,7 +53,7 @@
 			<font>font10</font>
 			<align>center</align>
 			<textcolor>FFffffff</textcolor>
-			<include>DialogInfo</include>
+			
 		</control>
 
 		<control type="button" id="10">
@@ -70,7 +70,7 @@
 			<onright>10</onright>
 			<onup>10</onup>
 			<ondown>10</ondown>
-			<include>DialogInfo</include>
+			
 		</control>
 
 		<control type="label" id="1">

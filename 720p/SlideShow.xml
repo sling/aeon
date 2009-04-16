@@ -9,7 +9,7 @@
 		<width>740</width>
 		<height>65</height>
 		<texture>Black.png</texture>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.ShowCodec</visible>
 	</control>
 
@@ -20,7 +20,7 @@
 		<label>-</label>
 		<align>left</align>
 		<font>font12</font>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.ShowCodec</visible>
 	</control>
 
@@ -31,7 +31,7 @@
 		<label>-</label>
 		<align>left</align>
 		<font>font12</font>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.ShowCodec</visible>
 	</control>
 
@@ -42,7 +42,7 @@
 		<label>-</label>
 		<align>left</align>
 		<font>font12</font>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.ShowCodec</visible>
 	</control>
 
@@ -67,7 +67,7 @@
 		<width>740</width>
 		<height>100</height>
 		<texture>Black.png</texture>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.HasMedia + Player.ShowInfo</visible>
 	</control>
 
@@ -79,7 +79,7 @@
 		<height>100</height>
 		<info>MusicPlayer.Cover</info>
 		<aspectratio>keep</aspectratio>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.HasMedia + Player.ShowInfo</visible>
 	</control>
 
@@ -91,7 +91,7 @@
 		<info>MusicPlayer.Artist</info>
 		<align>left</align>
 		<font>special12</font>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.HasMedia + Player.ShowInfo</visible>
 	</control>
 
@@ -103,7 +103,7 @@
 		<info>MusicPlayer.Title</info>
 		<align>left</align>
 		<font>special13</font>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.HasMedia + Player.ShowInfo</visible>
 	</control>
 
@@ -115,7 +115,7 @@
 		<info>MusicPlayer.Album</info>
 		<align>left</align>
 		<font>font10</font>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.HasMedia + Player.ShowInfo</visible>
 	</control>
 
@@ -127,7 +127,7 @@
 		<label>$INFO[musicplayer.Time]$INFO[musicplayer.Duration, / ]</label>
 		<align>left</align>
 		<font>font10</font>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.HasMedia + Player.ShowInfo</visible>
 	</control>
 
@@ -139,7 +139,7 @@
 		<label>$INFO[musicplayer.Playlistposition,Track ]$INFO[musicplayer.Playlistlength, / ]</label>
 		<align>right</align>
 		<font>font10</font>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 		<visible>Player.HasMedia + Player.ShowInfo</visible>
 	</control>
 

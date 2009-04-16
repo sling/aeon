@@ -58,7 +58,7 @@
 		<font>Font_ProgressLabelBig</font>
 		<textcolor>d0ffffff</textcolor>
 		<label>-</label>
-		<include>DialogInfo</include>
+		
 		<scroll>true</scroll>
 	</control>
 

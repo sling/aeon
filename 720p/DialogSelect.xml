@@ -24,7 +24,7 @@
 		<label>-</label>
 		<font>fruity17</font>
 		<textcolor>FF818181</textcolor>
-		<include>common-fade</include>
+		<include>Animation_CommonFade</include>
 	</control>
 
 	<control type="list" id="3">
