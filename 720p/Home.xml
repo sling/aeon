@@ -44,6 +44,8 @@
 	<include>Furniture_Time</include>
 	<include>Furniture_HomeRSS</include>
 
+	<include>home_alarm</include><!-- <<<<<< Add this -->
+
 	<control type="group">
 		<posx>0</posx>
 		<posy>0</posy>

@@ -117,7 +117,7 @@
 				<description>Shutdown Timer</description>
 				<label>31206</label>
 				<include>Objects_ContextMenuButton</include>
-				<onclick>AlarmClock(,Shutdown,)</onclick>
+				<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown(),)</onclick>
 			</control>
 			<control type="button" id="807">
 				<description>Log Out</description>

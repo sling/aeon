@@ -1,0 +1,85 @@
+<includes>
+
+<include name="home_alarm_img">
+	<control type="image">
+		<visible>System.HasAlarm(shutdowntimer)</visible>
+		<description>Panel</description>
+		<posx>346</posx>
+		<posy>1</posy>
+		<height>25</height>
+		<width>32</width>
+		<texture>common/shutdown.png</texture>
+		<colordiffuse>99FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+		<visible>System.HasAlarm()+!System.HasAlarm(shutdowntimer)</visible>
+		<description>Panel</description>
+		<posx>346</posx>
+		<posy>1</posy>
+		<height>25</height>
+		<width>32</width>
+		<texture>common/bell.png</texture>
+		<colordiffuse>99FFFFFF</colordiffuse>
+	</control>
+</include>
+<include name="home_alarm_ani">
+	<animation type="Conditional" condition="System.HasAlarm(shutdowntimer)">
+		<effect type="slide" start="0,0" end="-20,0" time="0" /> 
+	</animation>
+</include>
+<include name="home_alarm">
+
+
+
+		<control type="group">
+			<visible>System.HasAlarm(shutdowntimer)</visible>
+
+			<posx>500</posx>
+			<posy>-40</posy>
+			<animation effect="slide" start="0,0" end="0,40" time="200" condition="system.alarmlessorequal(shutdowntimer,60)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,40" time="200" condition="system.alarmlessorequal(shutdowntimer,180)+!system.alarmlessorequal(shutdowntimer,150)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,40" time="200" condition="system.alarmlessorequal(shutdowntimer,300)+!system.alarmlessorequal(shutdowntimer,270)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,40" time="200" condition="system.alarmlessorequal(shutdowntimer,450)+!system.alarmlessorequal(shutdowntimer,420)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,40" time="200" condition="system.alarmlessorequal(shutdowntimer,600)+!system.alarmlessorequal(shutdowntimer,570)">Conditional</animation>
+
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<control type="image">
+				<description>Panel</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>30</height>
+				<width>278</width>
+				<texture flipy="true">osd/osd_button_paused.png</texture>
+				<colordiffuse>FFFFFFFF</colordiffuse>
+			</control>
+
+  			<control type="label">
+<animation effect="slide" start="0,0" end="0,-40" time="200" condition="system.alarmlessorequal(shutdowntimer,70)">Conditional</animation>
+				<posx>20</posx>
+	    			<posy>0</posy>
+    				<width>238</width>
+    				<height>30</height>
+    				<font>Font_WeatherTitle</font>
+	    			<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>a9000000</textcolor>
+    				<label>power off in $INFO[System.Alarmpos]</label>
+	  		</control>
+  			<control type="label">
+<animation effect="slide" start="0,0" end="0,40" time="200" condition="system.alarmlessorequal(shutdowntimer,70)">Conditional</animation>
+				<posx>20</posx>
+	    			<posy>-40</posy>
+    				<width>238</width>
+    				<height>30</height>
+    				<font>Font_WeatherTitle</font>
+	    			<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>a9CF0C0C</textcolor>
+    				<label>power off in $INFO[System.Alarmpos]</label>
+	  		</control>
+		</control>
+
+</include>
+
+
+</includes>

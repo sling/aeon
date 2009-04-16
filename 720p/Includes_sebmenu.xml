@@ -693,7 +693,7 @@
 					<visible>!Skin.HasSetting(sub_Shutdown_Timer)</visible>
 					<description>Shutdown Timer</description>
 					<label>Timer</label>
-					<onclick>AlarmClock($LOCALIZE[20144],XBMC.Shutdown(),)</onclick>
+					<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown(),)</onclick>
 				</item>
 				<item id="62">
 					<visible>Container(300).HasFocus(22)</visible>

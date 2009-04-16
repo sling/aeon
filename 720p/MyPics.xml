@@ -62,7 +62,9 @@
 		<include>Viewtype_Wall</include>		
 
 		<include>Furniture_WallTime</include>
-		<include>Furniture_WallRSS</include>		
+		<include>Furniture_WallRSS</include>
+
+			<include>home_alarm</include><!-- <<<<<< Add this -->		
 		
 		<control type="group" id="7000">
 			<include>Animation_MediaMenuPosition</include>

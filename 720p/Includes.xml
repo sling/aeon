@@ -19,12 +19,12 @@
 <include file="Viewtype_Coverflow.xml" />
 <include file="Viewtype_List.xml" />
 <include file="Viewtype_Wall.xml" />
-
-<include file="Includes_sebmenu.xml" /><!-- <<<<<< Add this -->
-<include file="Includes_Customise_sebmenu.xml" /><!-- <<<<<< Add this -->
-
-<include file="Includes_moviegenre.xml" /><!-- <<<<<< Add this -->
-
+<!-- mods -->
+<include file="Includes_sebmenu.xml" />
+<include file="Includes_Customise_sebmenu.xml" />
+<include file="Includes_mod.xml" />
+<include file="Includes_moviegenre.xml" />
+<!-- mods end -->
 
 <!-- Text colours ================================== -->
 

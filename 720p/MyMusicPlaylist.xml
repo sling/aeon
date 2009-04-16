@@ -25,6 +25,8 @@
 		<include>Furniture_MediaPanel</include>
 		<include>Objects_ShowcaseMenuPanel</include>
 
+	<include>home_alarm</include><!-- <<<<<< Add this -->
+
 		<control type="group">
 			<include>Animation_MediaMenuPosition</include>
 	
