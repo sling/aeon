@@ -12,7 +12,7 @@
 		<colordiffuse>99FFFFFF</colordiffuse>
 	</control>
 	<control type="image">
-		<visible>System.HasAlarm()+!System.HasAlarm(shutdowntimer)</visible>
+		<visible>System.HasAlarm(Alarm)+!System.HasAlarm(shutdowntimer)</visible>
 		<description>Panel</description>
 		<posx>346</posx>
 		<posy>1</posy>
@@ -24,6 +24,9 @@
 </include>
 <include name="home_alarm_ani">
 	<animation type="Conditional" condition="System.HasAlarm(shutdowntimer)">
+		<effect type="slide" start="0,0" end="-20,0" time="0" /> 
+	</animation>
+	<animation type="Conditional" condition="System.HasAlarm(Alarm)+!System.HasAlarm(shutdowntimer)">
 		<effect type="slide" start="0,0" end="-20,0" time="0" /> 
 	</animation>
 </include>

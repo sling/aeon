@@ -90,8 +90,8 @@
 			<!-- Add this >>>>>> -->
 			<control type="togglebutton" id="803">
 				<description>kiosk</description>
-				<label>KIOSK: ON</label>
-				<altlabel>KIOSK: OFF</altlabel>
+				<label>KIOSK: On</label>
+				<altlabel>KIOSK: $LOCALIZE[591]</altlabel>
 				<include>Objects_ContextMenuButton</include>
       				<alttexturefocus>dialogs/context_highlight.png</alttexturefocus>
       				<alttexturenofocus>dialogs/context_nofocus.png</alttexturenofocus>
@@ -113,12 +113,38 @@
 				<onclick>Skin.SetBool(bmtransit)</onclick>
 				<onclick>XBMC.ActivateWindow(500)</onclick>
 			</control>
+			<!-- Add this >>>>>> -->
+			<control type="button" id="808">
+				<description>AlarmClock</description>
+				<label>$LOCALIZE[13208]</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>Skin.SetString(AlarmString)</onclick>
+				<onclick>AlarmClock(Alarm,Notification(Alarm,$INFO[Skin.String(AlarmString)]),30)</onclick>
+				<visible>!System.HasAlarm(Alarm)</visible>
+			</control>
+			<control type="button" id="812">
+				<description>AlarmClock</description>
+				<label>$LOCALIZE[222] $LOCALIZE[13208]</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>CancelAlarm(Alarm)</onclick>
+				<visible>System.HasAlarm(Alarm)</visible>
+			</control>
+			<!-- <<<<<< Add this -->
 			<control type="button" id="806">
 				<description>Shutdown Timer</description>
 				<label>31206</label>
 				<include>Objects_ContextMenuButton</include>
 				<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown(),)</onclick>
+				<visible>!System.HasAlarm(shutdowntimer)</visible>
 			</control>
+			<control type="button" id="811">
+				<description>Cancel Shutdown Timer</description>
+				<label>$LOCALIZE[222] $LOCALIZE[31206]</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>CancelAlarm(shutdowntimer)</onclick>
+				<visible>System.HasAlarm(shutdowntimer)</visible>
+			</control>
+			<!-- Add this >>>>>> -->
 			<control type="button" id="807">
 				<description>Log Out</description>
 				<label>31209</label>
@@ -133,12 +159,14 @@
 				<onclick>EjectTray()</onclick>
 				<visible>System.HasMediaDVD</visible>
 			</control>				
+			<!--
 			<control type="button" id="808">
 				<description>Restart</description>
 				<label>31207</label>
 				<include>Objects_ContextMenuButton</include>
 				<onclick>RestartApp</onclick>
 			</control>
+			-->
 			<control type="button" id="809">
 				<description>Shutdown</description>
 				<label>31208</label>
