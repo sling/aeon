@@ -1,0 +1,76 @@
+<includes>
+	<include name="ShowCase_Source_Flag">
+				<control type="image">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/defaultsource.png</texture>
+					<visible>!Control.IsVisible(82) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>				
+				<control type="image" id="82">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/source/hddvd.png</texture>
+					<visible>substring(listitem.filename,hddvd)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/source/bluray.png</texture>
+					<visible>substring(listitem.filename,bluray) | substring(listitem.filename,bdrip)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/source/dvd.png</texture>
+					<visible>substring(listitem.filename,sddvd)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/source/hdtv.png</texture>
+					<visible>substring(listitem.filename,hdtv)</visible>
+				</control>				
+				<control type="image" id="82">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/source/divx.png</texture>
+					<visible>substring(listitem.filename,divx)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/source/xvid.png</texture>
+					<visible>substring(listitem.filename,xvid)</visible>
+				</control>
+	</include>
+	<include name="Panel_Source_Flag">
+				<control type="image">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/defaultsource.png</texture>
+					<visible>!Control.IsVisible(82) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>				
+				<control type="image" id="82">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/source/hddvd.png</texture>
+					<visible>substring(listitem.filename,hddvd)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/source/bluray.png</texture>
+					<visible>substring(listitem.filename,bluray)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/source/dvd.png</texture>
+					<visible>substring(listitem.filename,sddvd)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/source/hdtv.png</texture>
+					<visible>substring(listitem.filename,hdtv)</visible>
+				</control>				
+				<control type="image" id="82">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/source/divx.png</texture>
+					<visible>substring(listitem.filename,divx)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/source/xvid.png</texture>
+					<visible>substring(listitem.filename,xvid)</visible>
+				</control>
+	</include>
+</includes>

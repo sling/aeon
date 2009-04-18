@@ -24,6 +24,12 @@
 <include file="Includes_Customise_sebmenu.xml" />
 <include file="Includes_mod.xml" />
 <include file="Includes_moviegenre.xml" />
+<include file="Includes_MediaFlags_collection.xml" />
+<include file="Includes_MediaFlags_studio.xml" />
+<include file="Includes_MediaFlags_source.xml" />
+<include file="Includes_MediaFlags_video.xml" />
+<include file="Includes_MediaFlags_audio.xml" />
+<include file="Includes_MediaFlags_language.xml" />
 <!-- mods end -->
 
 <!-- Text colours ================================== -->

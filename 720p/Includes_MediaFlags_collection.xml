@@ -1,0 +1,26 @@
+<includes>
+	<include name="ShowCase_Collection_Flag">
+				<control type="image">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/defaultcollection.png</texture>
+					<visible>!Control.IsVisible(11101) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>					
+				<control type="image" id="11101">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/collection/007.png</texture>
+					<visible>substring(listitem.studio,col_007)</visible>
+				</control>	
+	</include>
+	<include name="Panel_Collection_Flag">
+				<control type="image">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/defaultcollection.png</texture>
+					<visible>!Control.IsVisible(11101) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>					
+				<control type="image" id="11101">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/collection/dolbydigital.png</texture>
+					<visible>substring(listitem.studio,col_007)</visible>
+				</control>	
+	</include>
+</includes>

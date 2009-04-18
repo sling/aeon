@@ -1,0 +1,31 @@
+<includes>
+	<include name="ShowCase_Language_Flag">
+				<control type="image">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/defaultlanguage.png</texture>
+					<visible>!Control.IsVisible(11102) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>					
+				<control type="image" id="11102">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/language/eng-eng.png</texture>
+					<visible>substring(listitem.studio,laneng) + substring(listitem.studio,subeng)</visible>
+				</control>			
+	</include>
+	<include name="Panel_Language_Flag">
+				<control type="image">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/defaultlanguage.png</texture>
+					<visible>!Control.IsVisible(11102) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>					
+				<control type="image" id="11102">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/audio/dts.png</texture>
+					<visible>substring(listitem.studio,dts) + !substring(listitem.studio,ac-3)</visible>
+				</control>			
+				<control type="image" id="11102">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/audio/dolbydigital.png</texture>
+					<visible>substring(listitem.studio,ac-3)</visible>
+				</control>	
+	</include>
+</includes>

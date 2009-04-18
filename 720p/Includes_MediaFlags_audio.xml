@@ -1,0 +1,76 @@
+<includes>
+	<include name="ShowCase_Audio_Flag">
+				<control type="image">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/defaultsound.png</texture>
+					<visible>!Control.IsVisible(84) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>					
+				<control type="image" id="84">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/audio/dts.png</texture>
+					<visible>substring(listitem.studio,dts) + !substring(listitem.studio,ac-3)</visible>
+				</control>			
+				<control type="image" id="84">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/audio/dolbydigital.png</texture>
+					<visible>substring(listitem.studio,ac-3)</visible>
+				</control>	
+				<control type="image" id="84">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/audio/mp3.png</texture>
+					<visible>substring(listitem.studio,mpeg) + !substring(listitem.studio,mpeg4)</visible>
+				</control>
+				<control type="image" id="84">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/audio/flac.png</texture>
+					<visible>substring(listitem.studio,flac)</visible>
+				</control>
+				<control type="image" id="84">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/audio/ogg.png</texture>
+					<visible>substring(listitem.studio,vorbis)</visible>
+				</control>				
+				<control type="image" id="84">
+					<include>Furniture_ShowcaseMediaFlagsVars</include>
+					<texture>flags/audio/aac.png</texture>
+					<visible>substring(listitem.studio,aac)</visible>
+				</control>		
+	</include>
+	<include name="Panel_Audio_Flag">
+				<control type="image">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/defaultsound.png</texture>
+					<visible>!Control.IsVisible(84) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>					
+				<control type="image" id="84">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/audio/dts.png</texture>
+					<visible>substring(listitem.studio,dts) + !substring(listitem.studio,ac-3)</visible>
+				</control>			
+				<control type="image" id="84">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/audio/dolbydigital.png</texture>
+					<visible>substring(listitem.studio,ac-3)</visible>
+				</control>	
+				<control type="image" id="84">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/audio/mp3.png</texture>
+					<visible>substring(listitem.studio,mpeg)</visible>
+				</control>
+				<control type="image" id="84">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/audio/flac.png</texture>
+					<visible>substring(listitem.studio,flac)</visible>
+				</control>
+				<control type="image" id="84">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/audio/ogg.png</texture>
+					<visible>substring(listitem.studio,vorbis)</visible>
+				</control>				
+				<control type="image" id="84">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/audio/aac.png</texture>
+					<visible>substring(listitem.studio,aac)</visible>
+				</control>		
+	</include>
+</includes>
