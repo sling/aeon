@@ -152,7 +152,7 @@
 
 		<control type="image">
 			<include>Objects_FSInfoCertificate</include>
-			<texture>flags/mpaa_restricted.png</texture>
+			<texture>flags/mpaa/mpaa_restricted.png</texture>
 			<visible>substring(listitem.mpaa,Rated R)</visible>
 		</control>
 		
